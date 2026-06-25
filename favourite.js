@@ -81,10 +81,11 @@
     var existing = cart.findIndex(function (p) {
       return p.id === item.id;
     });
+    var qty = item.qty || 1;
     if (existing > -1) {
-      cart[existing].qty = (cart[existing].qty || 1) + 1;
+      cart[existing].qty = (cart[existing].qty || 1) + qty;
     } else {
-      cart.push({ id: item.id, name: item.name, model: item.model, price: item.price, image: item.image, qty: 1 });
+      cart.push({ id: item.id, name: item.name, model: item.model, price: item.price, image: item.image, qty: qty });
     }
     saveCart();
     updateCartBadge();
@@ -92,7 +93,7 @@
 
   function updateCartBadge() {
     document.querySelectorAll("#nav-cart .cart-badge").forEach(function (badge) {
-      var count = cart.reduce(function (sum, p) { return sum + (p.qty || 1); }, 0);
+      var count = cart.length;
       badge.textContent = count;
       badge.style.display = count > 0 ? "flex" : "none";
     });
@@ -195,6 +196,28 @@
     overlay.classList.remove("open");
   }
 
+  var currentProduct = null;
+
+  function openProductModal(data) {
+    currentProduct = data;
+    var overlay = document.getElementById("product-modal");
+    if (!overlay) return;
+    document.getElementById("product-modal-title").textContent = data.name;
+    document.getElementById("product-modal-model").textContent = data.model;
+    document.getElementById("product-modal-price").textContent = data.price;
+    document.getElementById("product-modal-image").src = data.image;
+    document.getElementById("product-modal-image").alt = data.name;
+    document.getElementById("product-modal-qty-value").textContent = "1";
+    overlay.classList.add("open");
+  }
+
+  function closeProductModal() {
+    var overlay = document.getElementById("product-modal");
+    if (!overlay) return;
+    overlay.classList.remove("open");
+    currentProduct = null;
+  }
+
   function init() {
     syncActiveButtons();
 
@@ -218,12 +241,55 @@
           return;
         }
       }
+
+      var prodOverlay = document.getElementById("product-modal");
+      if (prodOverlay && prodOverlay.classList.contains("open")) {
+        if (e.target === prodOverlay) {
+          closeProductModal();
+          return;
+        }
+        var prodCloseBtn = e.target.closest("#product-modal-close");
+        if (prodCloseBtn) {
+          closeProductModal();
+          return;
+        }
+      }
     });
 
     document.addEventListener("keydown", function (e) {
       if (e.key === "Escape") {
         closeModal();
+        closeProductModal();
       }
+    });
+
+    document.getElementById("product-modal-qty-minus").addEventListener("click", function () {
+      var valEl = document.getElementById("product-modal-qty-value");
+      var val = parseInt(valEl.textContent, 10);
+      if (val > 1) {
+        valEl.textContent = val - 1;
+      }
+    });
+
+    document.getElementById("product-modal-qty-plus").addEventListener("click", function () {
+      var valEl = document.getElementById("product-modal-qty-value");
+      var val = parseInt(valEl.textContent, 10);
+      valEl.textContent = val + 1;
+    });
+
+    document.getElementById("product-modal-add-btn").addEventListener("click", function () {
+      if (!currentProduct) return;
+      var qty = parseInt(document.getElementById("product-modal-qty-value").textContent, 10);
+      var item = {
+        id: currentProduct.id,
+        name: currentProduct.name,
+        model: currentProduct.model,
+        price: currentProduct.price,
+        image: currentProduct.image,
+        qty: qty,
+      };
+      addToCart(item);
+      closeProductModal();
     });
 
     document.querySelectorAll(".product-fav-btn").forEach(function (btn) {
@@ -236,12 +302,7 @@
       btn.addEventListener("click", function () {
         var data = getProductData(this);
         if (data) {
-          addToCart(data);
-          this.classList.add("added");
-          var self = this;
-          setTimeout(function () {
-            self.classList.remove("added");
-          }, 800);
+          openProductModal(data);
         }
       });
     });

@@ -144,7 +144,7 @@
   }
 
   function updateBadge(items) {
-    var count = items.reduce(function (sum, p) { return sum + (p.qty || 1); }, 0);
+    var count = items.length;
     document.querySelectorAll("#nav-cart .cart-badge").forEach(function (badge) {
       badge.textContent = count;
       badge.style.display = count > 0 ? "flex" : "none";

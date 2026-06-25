@@ -1025,6 +1025,43 @@
         </div>
       </div>
     </div>
+
+    <div class="product-modal-overlay" id="product-modal">
+      <div class="product-modal">
+        <div class="product-modal-header">
+          <h2 class="product-modal-title" id="product-modal-title">Product</h2>
+          <button
+            class="product-modal-close"
+            id="product-modal-close"
+            aria-label="Close product modal"
+          >
+            &times;
+          </button>
+        </div>
+        <div class="product-modal-body">
+          <div class="product-modal-image-wrapper">
+            <img class="product-modal-image" id="product-modal-image" src="" alt="" />
+          </div>
+          <div class="product-modal-info">
+            <p class="product-modal-model" id="product-modal-model"></p>
+            <p class="product-modal-price" id="product-modal-price"></p>
+            <div class="product-modal-qty">
+              <button class="product-modal-qty-btn" id="product-modal-qty-minus" aria-label="Decrease quantity">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12" /></svg>
+              </button>
+              <span class="product-modal-qty-value" id="product-modal-qty-value">1</span>
+              <button class="product-modal-qty-btn" id="product-modal-qty-plus" aria-label="Increase quantity">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg>
+              </button>
+            </div>
+            <button class="product-modal-add-btn" id="product-modal-add-btn">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="favourite.js"></script>
   </body>
 </html>
