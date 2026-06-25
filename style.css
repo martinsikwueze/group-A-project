@@ -6,11 +6,12 @@
 
 html {
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
-    background-color: #091428;
+    background-color: #002045;
     color: #ffffff;
     overflow-x: hidden;
 }
@@ -46,6 +47,7 @@ img {
     padding: 24px 60px;
     position: relative;
     z-index: 10;
+    background-color: #002045;
 }
 
 .nav-logo img {
@@ -92,6 +94,7 @@ img {
     padding: 40px 60px 0 80px;
     position: relative;
     min-height: calc(100vh - 108px);
+    background-color: #002045;
 }
 
 
@@ -196,7 +199,7 @@ img {
 
 .products-see-all {
     display: inline-block;
-    background-color: #0a1628;
+    background-color: #021D3B;
     color: #ffffff;
     font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
     font-size: 0.9rem;
