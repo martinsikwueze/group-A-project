@@ -81,6 +81,7 @@
                   d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
                 />
               </svg>
+              <span class="fav-badge"></span>
             </button>
             <button
               class="nav-icon-btn cart-icon-active"
@@ -781,6 +782,18 @@
       </div>
     </footer>
 
+    <div class="favourites-modal-overlay" id="favourites-modal">
+      <div class="favourites-modal">
+        <div class="favourites-modal-header">
+          <h2 class="favourites-modal-title">My Favourites</h2>
+          <button class="favourites-modal-close" id="favourites-modal-close" aria-label="Close favourites">&times;</button>
+        </div>
+        <div class="favourites-modal-body" id="favourites-modal-body">
+          <p class="favourites-empty">No favourites yet.</p>
+        </div>
+      </div>
+    </div>
+    <script src="favourite.js"></script>
     <script src="cart.js"></script>
   </body>
 </html>
