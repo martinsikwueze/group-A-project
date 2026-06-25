@@ -2178,7 +2178,8 @@ img {
     }
 
     .footer-column {
-        min-width: 100%;
+        flex: 1;
+        min-width: auto;
     }
 
     /* Cart page 480 */
