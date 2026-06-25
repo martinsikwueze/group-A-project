@@ -57,7 +57,10 @@
                 id="nav-search-input"
                 placeholder="Search products..."
               />
-              <div class="search-results-dropdown" id="search-results-dropdown"></div>
+              <div
+                class="search-results-dropdown"
+                id="search-results-dropdown"
+              ></div>
             </div>
             <button
               class="nav-icon-btn"
@@ -129,7 +132,7 @@
 
           <div class="nav-auth-group" id="nav-auth-group">
             <a href="login.html" class="nav-btn nav-btn-signin" id="nav-signin"
-              >Sign In</a
+              >Login</a
             >
             <a
               href="sign%20up.html"
@@ -218,7 +221,7 @@
         <div class="mobile-menu-divider"></div>
 
         <div class="mobile-menu-auth">
-          <a href="login.html" class="mobile-menu-signin">Sign In</a>
+          <a href="login.html" class="mobile-menu-signin">Login</a>
           <a href="sign%20up.html" class="mobile-menu-signup">Sign Up</a>
         </div>
       </div>
@@ -1040,18 +1043,58 @@
         </div>
         <div class="product-modal-body">
           <div class="product-modal-image-wrapper">
-            <img class="product-modal-image" id="product-modal-image" src="" alt="" />
+            <img
+              class="product-modal-image"
+              id="product-modal-image"
+              src=""
+              alt=""
+            />
           </div>
           <div class="product-modal-info">
             <p class="product-modal-model" id="product-modal-model"></p>
             <p class="product-modal-price" id="product-modal-price"></p>
             <div class="product-modal-qty">
-              <button class="product-modal-qty-btn" id="product-modal-qty-minus" aria-label="Decrease quantity">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12" /></svg>
+              <button
+                class="product-modal-qty-btn"
+                id="product-modal-qty-minus"
+                aria-label="Decrease quantity"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                </svg>
               </button>
-              <span class="product-modal-qty-value" id="product-modal-qty-value">1</span>
-              <button class="product-modal-qty-btn" id="product-modal-qty-plus" aria-label="Increase quantity">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg>
+              <span class="product-modal-qty-value" id="product-modal-qty-value"
+                >1</span
+              >
+              <button
+                class="product-modal-qty-btn"
+                id="product-modal-qty-plus"
+                aria-label="Increase quantity"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="12" y1="5" x2="12" y2="19" />
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                </svg>
               </button>
             </div>
             <button class="product-modal-add-btn" id="product-modal-add-btn">
