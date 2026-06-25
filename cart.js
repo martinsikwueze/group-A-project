@@ -151,6 +151,32 @@
     });
   }
 
+  // Checkout handler
+  var checkoutBtn = document.getElementById("cart-checkout-btn");
+  if (checkoutBtn) {
+    checkoutBtn.addEventListener("click", function () {
+      if (!window.EldioAuth || !window.EldioAuth.isLoggedIn()) {
+        window.location.href = "login.html";
+        return;
+      }
+      var modal = document.getElementById("checkout-modal");
+      if (modal) modal.classList.add("open");
+      saveCart([]);
+      renderItems([]);
+      updateBadge([]);
+      setTimeout(function () {
+        window.location.href = "index.html";
+      }, 2500);
+    });
+  }
+
+  var checkoutModalBtn = document.getElementById("checkout-modal-btn");
+  if (checkoutModalBtn) {
+    checkoutModalBtn.addEventListener("click", function () {
+      window.location.href = "index.html";
+    });
+  }
+
   // Init
   var items = loadCart();
   renderItems(items);

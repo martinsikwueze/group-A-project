@@ -2562,7 +2562,8 @@ img {
 
 @media (max-width: 520px) {
     .favourites-modal,
-    .product-modal {
+    .product-modal,
+    .checkout-modal {
         max-width: 100%;
         max-height: 90vh;
         border-radius: 12px;
@@ -2573,6 +2574,14 @@ img {
         padding: 16px 20px 12px;
     }
 
+    .checkout-modal {
+        padding: 36px 20px 28px;
+    }
+
+    .checkout-modal-title {
+        font-size: 1.15rem;
+    }
+
     .favourites-modal-body {
         padding: 12px 20px 20px;
     }
@@ -2580,5 +2589,346 @@ img {
     .product-modal-body {
         padding: 16px 20px 20px;
         gap: 16px;
+    }
+}
+
+/* ── User button (initials avatar) ── */
+.nav-user-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #0E56AA;
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    flex-shrink: 0;
+}
+
+.nav-user-btn:hover {
+    background-color: #2468d8;
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* ── User Modal ── */
+.user-modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 10002;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.user-modal-overlay.open {
+    display: flex;
+}
+
+.user-modal {
+    background-color: #ffffff;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 380px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.user-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 24px 16px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.user-modal-title {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #111827;
+    margin: 0;
+}
+
+.user-modal-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #6b7280;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 6px;
+    line-height: 1;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.user-modal-close:hover {
+    background-color: #f3f4f6;
+    color: #111827;
+}
+
+.user-modal-body {
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+}
+
+.user-modal-avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-color: #0E56AA;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.user-modal-name {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #111827;
+    margin: 0;
+}
+
+.user-modal-email {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin: 0 0 8px;
+}
+
+.user-modal-logout-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    background: none;
+    border: 1.5px solid #d1d5db;
+    color: #dc2626;
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 12px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.user-modal-logout-btn:hover {
+    background-color: #fef2f2;
+    border-color: #dc2626;
+    color: #b91c1c;
+}
+
+.user-modal-logout-btn svg {
+    flex-shrink: 0;
+}
+
+/* ── Checkout Success Modal ── */
+.checkout-modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 10003;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.checkout-modal-overlay.open {
+    display: flex;
+}
+
+.checkout-modal {
+    background-color: #ffffff;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 420px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    padding: 48px 32px 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+}
+
+.checkout-modal-icon {
+    margin-bottom: 4px;
+}
+
+.checkout-modal-title {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #111827;
+    margin: 0;
+}
+
+.checkout-modal-text {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.95rem;
+    color: #6b7280;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.checkout-modal-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0E56AA;
+    color: #ffffff;
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 8px;
+}
+
+.checkout-modal-btn:hover {
+    background-color: #2468d8;
+}
+
+/* ── Mobile Menu User Section ── */
+.mobile-menu-user {
+    display: none;
+    padding: 20px 24px;
+}
+
+.mobile-menu-user-info {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 16px;
+}
+
+.mobile-menu-user-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #0E56AA;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.mobile-menu-user-details {
+    flex: 1;
+    min-width: 0;
+}
+
+.mobile-menu-user-name {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0 0 2px;
+}
+
+.mobile-menu-user-email {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mobile-menu-user-logout {
+    display: block;
+    text-align: center;
+    padding: 12px 24px;
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #fca5a5;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    cursor: pointer;
+    background: none;
+    width: 100%;
+}
+
+.mobile-menu-user-logout:hover {
+    background-color: rgba(220, 38, 38, 0.15);
+    color: #f87171;
+    border-color: rgba(220, 38, 38, 0.3);
+}
+
+/* ── Auth Error Message ── */
+.auth-error {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.85rem;
+    color: #dc2626;
+    background-color: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin: 0;
+    text-align: left;
+}
+
+/* Hide user button on mobile; profile icon handles it */
+@media (max-width: 1024px) {
+    .nav-user-btn {
+        display: none !important;
+    }
+}
+
+/* Responsive: mobile menu user section */
+@media (max-width: 520px) {
+    .mobile-menu-user {
+        padding: 16px 20px;
+    }
+
+    .mobile-menu-user-avatar {
+        width: 38px;
+        height: 38px;
+        font-size: 0.9rem;
+    }
+
+    .user-modal {
+        max-width: 100%;
+        max-height: 90vh;
+        border-radius: 12px;
+    }
+
+    .user-modal-header {
+        padding: 16px 20px 12px;
+    }
+
+    .user-modal-body {
+        padding: 24px 20px;
     }
 }
