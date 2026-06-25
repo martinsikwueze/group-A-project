@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Eldio sign up page for creating a premium audio shopping account."
+    />
+    <title>Sign Up – Eldio | Premium Audio Technology</title>
+    <link rel="icon" href="img/logo.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@1,700;1,800;1,900&family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="auth-page">
+    <header class="cart-page-header" id="cart-page-header">
+      <nav class="navbar" id="navbar">
+        <a href="index.html" class="nav-logo" id="nav-logo">
+          <img src="img/logo.png" alt="Eldio Logo" />
+        </a>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="nav-link" id="nav-home">Home</a></li>
+          <li>
+            <a
+              href="index.html#products-section"
+              class="nav-link"
+              id="nav-products"
+              >Products</a
+            >
+          </li>
+        </ul>
+
+        <div class="nav-right">
+          <div class="nav-icons" id="nav-icons">
+            <div class="nav-search-bar" id="nav-search">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+              <input
+                type="text"
+                class="nav-search-input"
+                id="nav-search-input"
+                placeholder="Search products..."
+              />
+            </div>
+            <button
+              class="nav-icon-btn"
+              id="nav-favourite"
+              aria-label="Favourites"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                />
+              </svg>
+            </button>
+            <a
+              href="cart.html"
+              class="nav-icon-btn"
+              id="nav-cart"
+              aria-label="Cart"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="9" cy="21" r="1" />
+                <circle cx="20" cy="21" r="1" />
+                <path
+                  d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <div class="nav-auth-group" id="nav-auth-group">
+            <a href="login.html" class="nav-btn nav-btn-signin" id="nav-signin"
+              >Sign In</a
+            >
+            <a
+              href="sign%20up.html"
+              class="nav-btn nav-btn-signup"
+              id="nav-signup"
+              >Sign Up</a
+            >
+          </div>
+
+          <a
+            href="login.html"
+            class="nav-icon-btn nav-icon-profile"
+            aria-label="Back to home"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+              <circle cx="12" cy="7" r="4" />
+            </svg>
+          </a>
+
+          <button
+            class="hamburger"
+            id="hamburger"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+      </nav>
+
+      <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+
+      <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+          <span class="mobile-menu-title">Menu</span>
+          <button
+            class="mobile-menu-close"
+            id="mobile-menu-close"
+            aria-label="Close menu"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
+        </div>
+
+        <ul class="mobile-menu-links">
+          <li><a href="index.html" class="mobile-menu-link">Home</a></li>
+          <li><a href="#" class="mobile-menu-link">About Us</a></li>
+          <li>
+            <a href="index.html#products-section" class="mobile-menu-link"
+              >Products</a
+            >
+          </li>
+        </ul>
+
+        <div class="mobile-menu-divider"></div>
+
+        <div class="mobile-menu-actions">
+          <div class="mobile-search-bar" id="mobile-search">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+            <input
+              type="text"
+              class="mobile-search-input"
+              placeholder="Search products..."
+            />
+          </div>
+        </div>
+
+        <div class="mobile-menu-divider"></div>
+
+        <div class="mobile-menu-auth">
+          <a href="login.html" class="mobile-menu-signin">Sign In</a>
+          <a href="sign%20up.html" class="mobile-menu-signup">Sign Up</a>
+        </div>
+      </div>
+    </header>
+
+    <script src="responsive.js"></script>
+
+    <main class="auth-page-shell">
+      <section class="auth-page-content">
+        <div class="auth-card">
+          <div class="auth-card-header">
+            <span class="auth-card-kicker">Start here</span>
+            <h1 class="auth-card-title">Sign Up</h1>
+            <p class="auth-card-copy">
+              Create your Eldio account in a minute and unlock a more personal
+              shopping experience.
+            </p>
+          </div>
+
+          <form class="auth-form" action="#" method="post">
+            <div class="auth-form-row">
+              <label class="auth-field">
+                <span class="auth-label">First name</span>
+                <input
+                  class="auth-input"
+                  type="text"
+                  name="firstName"
+                  placeholder="John"
+                  required
+                />
+              </label>
+
+              <label class="auth-field">
+                <span class="auth-label">Last name</span>
+                <input
+                  class="auth-input"
+                  type="text"
+                  name="lastName"
+                  placeholder="Doe"
+                  required
+                />
+              </label>
+            </div>
+
+            <label class="auth-field">
+              <span class="auth-label">Email address</span>
+              <input
+                class="auth-input"
+                type="email"
+                name="email"
+                placeholder="you@example.com"
+                required
+              />
+            </label>
+
+            <div class="auth-form-row">
+              <label class="auth-field">
+                <span class="auth-label">Password</span>
+                <input
+                  class="auth-input"
+                  type="password"
+                  name="password"
+                  placeholder="Create a password"
+                  required
+                />
+              </label>
+
+              <label class="auth-field">
+                <span class="auth-label">Confirm password</span>
+                <input
+                  class="auth-input"
+                  type="password"
+                  name="confirmPassword"
+                  placeholder="Repeat password"
+                  required
+                />
+              </label>
+            </div>
+
+            <label class="auth-check">
+              <input type="checkbox" name="terms" required />
+              <span>I agree to the terms and privacy policy.</span>
+            </label>
+
+            <button class="auth-submit" type="submit">Create Account</button>
+          </form>
+
+          <p class="auth-footer">
+            Already have an account? <a href="login.html">Sign in</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="footer">
+      <div class="footer-main">
+        <div class="footer-brand" id="footer-brand">
+          <div class="footer-brand-top">
+            <img src="img/logo.png" alt="Eldio Logo" class="footer-logo" />
+            <p class="footer-description">
+              Eldio delivers premium audio experiences with innovative design,
+              exceptional sound quality, and all-day comfort. Hear every moment
+              with clarity and confidence.
+            </p>
+          </div>
+          <div class="footer-socials" id="footer-socials">
+            <a href="#" class="footer-social-link" aria-label="Facebook">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                />
+              </svg>
+            </a>
+            <a href="#" class="footer-social-link" aria-label="Instagram">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
+                />
+              </svg>
+            </a>
+            <a href="#" class="footer-social-link" aria-label="Twitter">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                />
+              </svg>
+            </a>
+            <a href="#" class="footer-social-link" aria-label="LinkedIn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                />
+              </svg>
+            </a>
+            <a href="#" class="footer-social-link" aria-label="Google">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"
+                />
+                <path
+                  d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                />
+                <path
+                  d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                />
+                <path
+                  d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links" id="footer-links">
+          <div class="footer-column">
+            <h4 class="footer-column-title">Company</h4>
+            <ul class="footer-column-list">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">Testimonial</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer-column-title">Products</h4>
+            <ul class="footer-column-list">
+              <li><a href="#">Eldio Analytics</a></li>
+              <li><a href="#">Chat Us</a></li>
+              <li><a href="#">Our Platform</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer-column-title">Resources</h4>
+            <ul class="footer-column-list">
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Support Center</a></li>
+              <li><a href="#">Community</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer-column-title">Contact Us</h4>
+            <ul class="footer-column-list footer-contact-list">
+              <li>
+                <a href="tel:+2349038127428" class="footer-contact-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"
+                    />
+                  </svg>
+                  +234 90381 27428
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:TeamAlpha@gmail.com"
+                  class="footer-contact-item"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                    <path d="M22 7l-10 7L2 7" />
+                  </svg>
+                  TeamAlpha@gmail.com
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom" id="footer-bottom">
+        <p class="footer-copyright">@2026 Eldio. All Rights Reserved.</p>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of services</a>
+          <a href="#">Cookies</a>
+          <a href="#">Security</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
