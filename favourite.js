@@ -66,15 +66,6 @@
       btn.classList.add("active");
     }
     saveFavourites();
-    updateBadge();
-  }
-
-  function updateBadge() {
-    var badge = document.querySelector(".fav-badge");
-    if (!badge) return;
-    var count = favourites.length;
-    badge.textContent = count;
-    badge.style.display = count > 0 ? "flex" : "none";
   }
 
   function addToCart(item) {
@@ -146,7 +137,6 @@
           return p.id !== id;
         });
         saveFavourites();
-        updateBadge();
         syncActiveButtons();
         renderModalItems();
       });
@@ -307,15 +297,7 @@
       });
     });
 
-    updateBadge();
     updateCartBadge();
-    var badge = document.querySelector(".fav-badge");
-    if (!badge && document.getElementById("nav-favourite")) {
-      var b = document.createElement("span");
-      b.className = "fav-badge";
-      document.getElementById("nav-favourite").appendChild(b);
-      updateBadge();
-    }
   }
 
   if (document.readyState === "loading") {

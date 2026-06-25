@@ -2114,25 +2114,6 @@ img {
     }
 }
 
-.fav-badge {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: #dc2626;
-    color: #ffffff;
-    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
-    font-size: 0.6rem;
-    font-weight: 700;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    line-height: 1;
-    pointer-events: none;
-}
-
 .favourites-modal-overlay {
     position: fixed;
     inset: 0;
