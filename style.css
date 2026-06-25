@@ -909,7 +909,7 @@ img {
     }
 
     .newsletter {
-        padding: 40px 20px 50px;
+        padding: 40px 20px 0;
         min-height: auto;
     }
 
