@@ -835,6 +835,11 @@ img {
     height: 26px;
 }
 
+.product-cart-btn.added {
+    color: #ffffff;
+    background-color: #0E56AA;
+}
+
 .product-fav-btn {
     display: flex;
     align-items: center;
@@ -1203,7 +1208,7 @@ img {
 
 .footer-links {
     display: flex;
-    gap: 50px;
+    gap: 10px;
     flex-wrap: wrap;
 }
 

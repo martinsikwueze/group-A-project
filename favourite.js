@@ -232,6 +232,20 @@
       });
     });
 
+    document.querySelectorAll(".product-cart-btn").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var data = getProductData(this);
+        if (data) {
+          addToCart(data);
+          this.classList.add("added");
+          var self = this;
+          setTimeout(function () {
+            self.classList.remove("added");
+          }, 800);
+        }
+      });
+    });
+
     updateBadge();
     updateCartBadge();
     var badge = document.querySelector(".fav-badge");
