@@ -210,6 +210,7 @@
 
   function init() {
     syncActiveButtons();
+    updateCartBadge();
 
     document.addEventListener("click", function (e) {
       var navFav = e.target.closest("#nav-favourite");
@@ -253,34 +254,43 @@
       }
     });
 
-    document.getElementById("product-modal-qty-minus").addEventListener("click", function () {
-      var valEl = document.getElementById("product-modal-qty-value");
-      var val = parseInt(valEl.textContent, 10);
-      if (val > 1) {
-        valEl.textContent = val - 1;
-      }
-    });
+    var qtyMinus = document.getElementById("product-modal-qty-minus");
+    if (qtyMinus) {
+      qtyMinus.addEventListener("click", function () {
+        var valEl = document.getElementById("product-modal-qty-value");
+        var val = parseInt(valEl.textContent, 10);
+        if (val > 1) {
+          valEl.textContent = val - 1;
+        }
+      });
+    }
 
-    document.getElementById("product-modal-qty-plus").addEventListener("click", function () {
-      var valEl = document.getElementById("product-modal-qty-value");
-      var val = parseInt(valEl.textContent, 10);
-      valEl.textContent = val + 1;
-    });
+    var qtyPlus = document.getElementById("product-modal-qty-plus");
+    if (qtyPlus) {
+      qtyPlus.addEventListener("click", function () {
+        var valEl = document.getElementById("product-modal-qty-value");
+        var val = parseInt(valEl.textContent, 10);
+        valEl.textContent = val + 1;
+      });
+    }
 
-    document.getElementById("product-modal-add-btn").addEventListener("click", function () {
-      if (!currentProduct) return;
-      var qty = parseInt(document.getElementById("product-modal-qty-value").textContent, 10);
-      var item = {
-        id: currentProduct.id,
-        name: currentProduct.name,
-        model: currentProduct.model,
-        price: currentProduct.price,
-        image: currentProduct.image,
-        qty: qty,
-      };
-      addToCart(item);
-      closeProductModal();
-    });
+    var addBtn = document.getElementById("product-modal-add-btn");
+    if (addBtn) {
+      addBtn.addEventListener("click", function () {
+        if (!currentProduct) return;
+        var qty = parseInt(document.getElementById("product-modal-qty-value").textContent, 10);
+        var item = {
+          id: currentProduct.id,
+          name: currentProduct.name,
+          model: currentProduct.model,
+          price: currentProduct.price,
+          image: currentProduct.image,
+          qty: qty,
+        };
+        addToCart(item);
+        closeProductModal();
+      });
+    }
 
     document.querySelectorAll(".product-fav-btn").forEach(function (btn) {
       btn.addEventListener("click", function () {
@@ -296,8 +306,6 @@
         }
       });
     });
-
-    updateCartBadge();
   }
 
   if (document.readyState === "loading") {
