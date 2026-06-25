@@ -129,7 +129,7 @@ img {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    background-color: #1a5ecf;
+    background-color: #0E56AA;
     color: #ffffff;
     font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
     font-size: 1.05rem;
@@ -892,7 +892,7 @@ img {
     }
 
     .categories {
-        padding: 20px 20px 0;
+        padding: 20px 20px 40px;
     }
 
     .categories-grid {
