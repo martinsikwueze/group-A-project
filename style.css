@@ -2824,6 +2824,99 @@ img {
     background-color: #2468d8;
 }
 
+/* ── Newsletter Success Modal ── */
+.newsletter-modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 10004;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.newsletter-modal-overlay.open {
+    display: flex;
+}
+
+.newsletter-modal {
+    background-color: #ffffff;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 400px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    padding: 48px 32px 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    position: relative;
+}
+
+.newsletter-modal-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #6b7280;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 6px;
+    line-height: 1;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.newsletter-modal-close:hover {
+    background-color: #f3f4f6;
+    color: #111827;
+}
+
+.newsletter-modal-icon {
+    margin-bottom: 4px;
+}
+
+.newsletter-modal-title {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #111827;
+    margin: 0;
+}
+
+.newsletter-modal-text {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.95rem;
+    color: #6b7280;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.newsletter-modal-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0E56AA;
+    color: #ffffff;
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 8px;
+}
+
+.newsletter-modal-btn:hover {
+    background-color: #2468d8;
+}
+
 /* ── Mobile Menu User Section ── */
 .mobile-menu-user {
     display: none;

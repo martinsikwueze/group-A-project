@@ -47,7 +47,8 @@
   }
 
   function isFavourited(productId) {
-    return favourites.some(function (p) {
+    var items = loadFavourites();
+    return items.some(function (p) {
       return p.id === productId;
     });
   }
@@ -93,13 +94,14 @@
   function renderModalItems() {
     var body = document.getElementById("favourites-modal-body");
     if (!body) return;
-    if (favourites.length === 0) {
+    var items = loadFavourites();
+    if (items.length === 0) {
       body.innerHTML =
         '<p class="favourites-empty">No favourites yet.</p>';
       return;
     }
     var html = "";
-    favourites.forEach(function (item) {
+    items.forEach(function (item) {
       html +=
         '<div class="favourites-modal-item" data-id="' +
         item.id +
@@ -133,10 +135,12 @@
         var itemEl = this.closest(".favourites-modal-item");
         if (!itemEl) return;
         var id = itemEl.getAttribute("data-id");
-        favourites = favourites.filter(function (p) {
+        var items = loadFavourites();
+        items = items.filter(function (p) {
           return p.id !== id;
         });
-        saveFavourites();
+        localStorage.setItem(FAV_STORAGE_KEY, JSON.stringify(items));
+        favourites = items;
         syncActiveButtons();
         renderModalItems();
       });
@@ -147,7 +151,8 @@
         var itemEl = this.closest(".favourites-modal-item");
         if (!itemEl) return;
         var id = itemEl.getAttribute("data-id");
-        var item = favourites.find(function (p) {
+        var items = loadFavourites();
+        var item = items.find(function (p) {
           return p.id === id;
         });
         if (item) {

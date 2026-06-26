@@ -1201,6 +1201,95 @@
       </div>
     </div>
 
+    <!-- Newsletter Success Modal -->
+    <div class="newsletter-modal-overlay" id="newsletter-modal">
+      <div class="newsletter-modal">
+        <button
+          class="newsletter-modal-close"
+          id="newsletter-modal-close"
+          aria-label="Close"
+        >
+          &times;
+        </button>
+        <div class="newsletter-modal-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="48"
+            height="48"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#10b981"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+            <polyline points="22 4 12 14.01 9 11.01" />
+          </svg>
+        </div>
+        <h2 class="newsletter-modal-title">Subscribed Successfully!</h2>
+        <p class="newsletter-modal-text">
+          Thank you for subscribing to our newsletter. You'll now receive
+          updates on our latest collections and exclusive offers.
+        </p>
+        <button class="newsletter-modal-btn" id="newsletter-modal-btn">
+          Continue
+        </button>
+      </div>
+    </div>
+
+    <script>
+      (function () {
+        var form = document.getElementById("newsletter-form");
+        var modal = document.getElementById("newsletter-modal");
+        var closeBtn = document.getElementById("newsletter-modal-close");
+        var continueBtn = document.getElementById("newsletter-modal-btn");
+
+        function openNewsletterModal() {
+          if (modal) modal.classList.add("open");
+        }
+
+        function closeNewsletterModal() {
+          if (modal) modal.classList.remove("open");
+        }
+
+        if (form) {
+          form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            var input = document.getElementById("newsletter-input");
+            if (input && input.value.trim() !== "") {
+              openNewsletterModal();
+              input.value = "";
+            }
+          });
+        }
+
+        if (closeBtn) {
+          closeBtn.addEventListener("click", closeNewsletterModal);
+        }
+
+        if (continueBtn) {
+          continueBtn.addEventListener("click", closeNewsletterModal);
+        }
+
+        if (modal) {
+          modal.addEventListener("click", function (e) {
+            if (e.target === modal) closeNewsletterModal();
+          });
+        }
+
+        document.addEventListener("keydown", function (e) {
+          if (
+            e.key === "Escape" &&
+            modal &&
+            modal.classList.contains("open")
+          ) {
+            closeNewsletterModal();
+          }
+        });
+      })();
+    </script>
+
     <script src="auth.js"></script>
     <script src="products.js"></script>
     <script src="search.js"></script>
