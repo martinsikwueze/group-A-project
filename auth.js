@@ -190,7 +190,16 @@
           form.insertBefore(errEl, form.querySelector(".auth-submit"));
           return;
         }
+        var recaptchaResponse = grecaptcha.getResponse();
+        if (!recaptchaResponse) {
+          var errEl = document.createElement("p");
+          errEl.className = "auth-error";
+          errEl.textContent = "Please complete the reCAPTCHA.";
+          form.insertBefore(errEl, form.querySelector(".auth-submit"));
+          return;
+        }
         var result = register(firstName, lastName, email, password);
+        grecaptcha.reset();
         if (result.success) {
           window.location.href = "login.html";
         } else {

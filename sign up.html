@@ -16,6 +16,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body class="auth-page">
     <header class="cart-page-header" id="cart-page-header">
@@ -286,6 +287,8 @@
               <input type="checkbox" name="terms" required />
               <span>I agree to the terms and privacy policy.</span>
             </label>
+
+            <div class="g-recaptcha" data-sitekey="6Le4OzYtAAAAAJTR_HP2t8bXe4yiTAfTJWjK6ZYW" style="margin-bottom:16px"></div>
 
             <button class="auth-submit" type="submit">Create Account</button>
           </form>
