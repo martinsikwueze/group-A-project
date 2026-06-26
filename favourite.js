@@ -293,16 +293,28 @@
     }
 
     document.querySelectorAll(".product-fav-btn").forEach(function (btn) {
-      btn.addEventListener("click", function () {
+      btn.addEventListener("click", function (e) {
+        e.stopPropagation();
         toggleFavourite(this);
       });
     });
 
     document.querySelectorAll(".product-cart-btn").forEach(function (btn) {
-      btn.addEventListener("click", function () {
+      btn.addEventListener("click", function (e) {
+        e.stopPropagation();
         var data = getProductData(this);
         if (data) {
           openProductModal(data);
+        }
+      });
+    });
+
+    // Card-level navigation for index.html static cards
+    document.querySelectorAll("#products-grid .product-card, #new-arrivals-grid .product-card").forEach(function (card) {
+      card.addEventListener("click", function () {
+        var id = this.getAttribute("data-product-id") || this.id;
+        if (id) {
+          window.location.href = "product.html?id=" + id;
         }
       });
     });

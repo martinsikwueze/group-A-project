@@ -14,6 +14,8 @@
       category: "Audio",
       dateAdded: "2026-06-20T10:00:00Z",
       popularity: 92,
+      description: "Experience crystal-clear audio with our premium wireless earbuds. Featuring advanced noise isolation and a comfortable ergonomic fit for all-day wear.",
+      specs: { "Driver Size": "10mm", "Frequency Response": "20Hz \u2013 20kHz", "Impedance": "32\u03a9", "Battery Life": "8 hrs (32 with case)", "Connectivity": "Bluetooth 5.3", "Weight": "4.5g each" },
     },
     {
       id: "product-headphones",
@@ -24,6 +26,8 @@
       category: "Audio",
       dateAdded: "2026-05-15T08:30:00Z",
       popularity: 98,
+      description: "Immerse yourself in rich, detailed sound with our over-ear headphones. Premium memory foam cushions and adaptive noise cancellation deliver studio-quality audio.",
+      specs: { "Driver Size": "40mm", "Frequency Response": "10Hz \u2013 25kHz", "Impedance": "32\u03a9", "Battery Life": "30 hours", "Connectivity": "Bluetooth 5.2 + 3.5mm jack", "Weight": "250g" },
     },
     {
       id: "product-speakers",
@@ -34,6 +38,8 @@
       category: "Audio",
       dateAdded: "2026-04-10T12:00:00Z",
       popularity: 85,
+      description: "Fill any room with powerful, room-filling sound. Dual drivers and a dedicated tweeter deliver crisp highs and thundering bass that brings your music to life.",
+      specs: { "Driver Size": '2x 3" woofers + 1" tweeter', "Frequency Response": "50Hz \u2013 20kHz", "Impedance": "8\u03a9", "Battery Life": "12 hours", "Connectivity": "Bluetooth 5.0 + AUX", "Weight": "1.8kg" },
     },
     {
       id: "product-gaming-gear",
@@ -44,6 +50,8 @@
       category: "Accessories",
       dateAdded: "2026-06-25T09:00:00Z",
       popularity: 76,
+      description: "Dominate the competition with precision-engineered gaming gear. Ergonomic design and durable construction give you the edge in every match.",
+      specs: { "Compatibility": "PC, PS5, Xbox Series X", "Material": "Aluminum alloy + rubber grips", "Weight": "180g", "Connectivity": "USB-C wired" },
     },
     {
       id: "product-smart-watch",
@@ -54,6 +62,8 @@
       category: "Wearables",
       dateAdded: "2026-06-22T14:00:00Z",
       popularity: 88,
+      description: "Stay connected and track your fitness with our sleek smart watch. Features heart rate monitoring, GPS tracking, and a vibrant AMOLED display.",
+      specs: { "Display": '1.4" AMOLED', "Battery Life": "14 days", "Water Resistance": "5 ATM", "Connectivity": "Bluetooth 5.0, GPS", "Weight": "52g" },
     },
     {
       id: "product-power-bank",
@@ -64,6 +74,8 @@
       category: "Accessories",
       dateAdded: "2026-06-18T11:00:00Z",
       popularity: 70,
+      description: "Keep your devices powered all day with our high-capacity power bank. Fast 65W PD charging supports laptops, tablets, and phones.",
+      specs: { "Capacity": "20000mAh", "Output Power": "65W PD", "Input": "USB-C 60W", "Battery Type": "Li-Polymer", "Weight": "340g" },
     },
     {
       id: "product-charger-head",
@@ -74,6 +86,8 @@
       category: "Chargers",
       dateAdded: "2026-06-10T07:30:00Z",
       popularity: 65,
+      description: "Fast and reliable charging for all your USB-C devices. GaN technology delivers 65W of power in a compact, travel-friendly design.",
+      specs: { "Output Power": "65W GaN", "Input": "100\u2013240V AC", "Ports": "2x USB-C + 1x USB-A", "Charging Speed": "0\u201350% in 30 min", "Weight": "120g" },
     },
     {
       id: "product-usb-cable",
@@ -84,6 +98,8 @@
       category: "Chargers",
       dateAdded: "2026-06-05T16:00:00Z",
       popularity: 60,
+      description: "Durable braided USB-C cable for fast charging and data sync. Reinforced connectors withstand daily wear and tear.",
+      specs: { "Length": "2m", "Material": "Nylon braided", "Data Transfer": "USB 3.1 Gen 2 (10Gbps)", "Charging Power": "100W PD", "Weight": "45g" },
     },
     {
       id: "product-white-airpods",
@@ -94,6 +110,8 @@
       category: "Audio",
       dateAdded: "2026-06-26T00:00:00Z",
       popularity: 95,
+      description: "Sleek, lightweight true wireless earbuds with exceptional sound quality and seamless device pairing. Perfect for music on the go.",
+      specs: { "Driver Size": "12mm", "Frequency Response": "20Hz \u2013 20kHz", "Impedance": "32\u03a9", "Battery Life": "6 hrs (24 with case)", "Connectivity": "Bluetooth 5.3", "Weight": "4g each" },
     },
     {
       id: "product-speaker-portable",
@@ -104,6 +122,8 @@
       category: "Audio",
       dateAdded: "2026-05-28T10:00:00Z",
       popularity: 80,
+      description: "Take the party anywhere with our compact, rugged portable speaker. IP67 waterproof and 20-hour battery life for non-stop music outdoors.",
+      specs: { "Driver Size": "2x 50mm", "Frequency Response": "60Hz \u2013 20kHz", "Impedance": "4\u03a9", "Battery Life": "20 hours", "Connectivity": "Bluetooth 5.2 + AUX", "Weight": "680g" },
     },
     {
       id: "product-accessories-kit",
@@ -114,6 +134,8 @@
       category: "Accessories",
       dateAdded: "2026-03-12T09:00:00Z",
       popularity: 55,
+      description: "Everything you need in one complete bundle. Includes USB-C cable, charging brick, premium eartips, and a stylish carrying case.",
+      specs: { "Includes": "USB-C cable, charging brick, eartips, case", "Compatibility": "All USB-C devices", "Material": "Silicone + aluminum", "Weight": "250g" },
     },
     {
       id: "product-charger-wireless",
@@ -124,8 +146,11 @@
       category: "Chargers",
       dateAdded: "2026-06-01T13:00:00Z",
       popularity: 72,
+      description: "Effortless wireless charging with 15W fast charging for all Qi-compatible devices. Sleek pad design with LED indicator.",
+      specs: { "Output Power": "15W (Qi)", "Input": "USB-C 18W", "Charging Speed": "0\u201350% in 45 min", "Compatibility": "All Qi devices", "Weight": "95g" },
     },
   ];
+  window.PRODUCTS = PRODUCTS;
 
   /* ── Helpers ── */
   var FAV_KEY = "eldio_favourites";
@@ -311,6 +336,13 @@
     var favs = loadJSON(FAV_KEY);
     var cart = loadJSON(CART_KEY);
 
+    document.querySelectorAll("#all-products-grid .product-card").forEach(function (card) {
+      card.addEventListener("click", function (e) {
+        if (e.target.closest(".product-fav-btn") || e.target.closest(".product-cart-btn")) return;
+        window.location.href = "product.html?id=" + this.id;
+      });
+    });
+
     document.querySelectorAll("#all-products-grid .product-fav-btn").forEach(function (btn) {
       btn.addEventListener("click", function (e) {
         e.stopPropagation();
@@ -485,8 +517,29 @@
     menu.innerHTML = html;
   }
 
+  /* ── Store product data for search widget ── */
+  function saveSearchData() {
+    try {
+      var searchData = PRODUCTS.map(function (p) {
+        return {
+          id: p.id,
+          name: p.name,
+          model: p.model,
+          price: formatPrice(p.price),
+          image: p.image,
+        };
+      });
+      localStorage.setItem("eldio_products", JSON.stringify(searchData));
+    } catch (e) {}
+  }
+
   /* ── Init ── */
   function init() {
+    saveSearchData();
+
+    // Guard: only run full init on the products page
+    if (!document.getElementById("all-products-grid")) return;
+
     buildCategoryOptions();
 
     // Setup dropdowns
@@ -579,20 +632,6 @@
 
     // Initial render
     render();
-
-    // Also store products in localStorage for the search widget
-    try {
-      var searchData = PRODUCTS.map(function (p) {
-        return {
-          id: p.id,
-          name: p.name,
-          model: p.model,
-          price: formatPrice(p.price),
-          image: p.image,
-        };
-      });
-      localStorage.setItem("eldio_products", JSON.stringify(searchData));
-    } catch (e) {}
   }
 
   if (document.readyState === "loading") {

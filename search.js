@@ -130,6 +130,10 @@
       var resultItem = e.target.closest(".search-result-item");
       if (resultItem) {
         dropdown.classList.remove("open");
+        var id = resultItem.getAttribute("data-id");
+        if (id) {
+          window.location.href = "product.html?id=" + id;
+        }
         return;
       }
       if (
