@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Eldio - Product details page. Explore premium audio technology products."
+      content="Eldio services - expert audio repairs, custom setups, consultations, and premium support for all your audio needs."
     />
-    <title>Product – Eldio | Premium Audio Technology</title>
+    <title>Services – Eldio | Premium Audio Technology</title>
     <link rel="icon" href="img/logo.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@1,700;1,800;1,900&family=Poppins:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="product-page-header" id="product-page-header">
+    <header class="services-page-header" id="services-page-header">
       <nav class="navbar" id="navbar">
         <a href="index.html" class="nav-logo" id="nav-logo">
           <img src="img/logo.png" alt="Eldio Logo" />
@@ -28,9 +28,7 @@
           <li><a href="index.html" class="nav-link" id="nav-home">Home</a></li>
           <li><a href="about.html" class="nav-link" id="nav-about">About Us</a></li>
           <li>
-            <a href="products.html" class="nav-link" id="nav-products"
-              >Products</a
-            >
+            <a href="products.html" class="nav-link" id="nav-products">Products</a>
           </li>
         </ul>
 
@@ -82,6 +80,7 @@
                   d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
                 />
               </svg>
+              <span class="fav-badge"></span>
             </button>
             <a
               href="cart.html"
@@ -108,26 +107,6 @@
               </svg>
               <span class="cart-badge"></span>
             </a>
-            <button
-              class="nav-icon-btn nav-icon-profile"
-              id="nav-profile"
-              aria-label="Profile"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                <circle cx="12" cy="7" r="4" />
-              </svg>
-            </button>
           </div>
 
           <div class="nav-auth-group" id="nav-auth-group">
@@ -151,6 +130,27 @@
             <span class="nav-user-initial" id="nav-user-initial">J</span>
           </button>
 
+          <a
+            href="index.html"
+            class="nav-icon-btn nav-icon-profile"
+            aria-label="Back to home"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+              <circle cx="12" cy="7" r="4" />
+            </svg>
+          </a>
+
           <button
             class="hamburger"
             id="hamburger"
@@ -164,10 +164,8 @@
         </div>
       </nav>
 
-      <!-- Mobile Menu Overlay -->
       <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
 
-      <!-- Mobile Menu Drawer -->
       <div class="mobile-menu" id="mobile-menu">
         <div class="mobile-menu-header">
           <span class="mobile-menu-title">Menu</span>
@@ -253,9 +251,9 @@
 
     <script src="responsive.js"></script>
 
-    <main class="product-page" id="product-page">
+    <main class="services-page" id="services-page">
       <!-- Breadcrumb -->
-      <div class="cart-breadcrumb" id="product-breadcrumb">
+      <div class="services-breadcrumb">
         <a href="index.html" class="breadcrumb-link">Home</a>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -264,193 +262,271 @@
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
-          stroke-width="2"
+          stroke-width="2.5"
           stroke-linecap="round"
           stroke-linejoin="round"
         >
           <polyline points="9 18 15 12 9 6" />
         </svg>
-        <a href="products.html" class="breadcrumb-link">Products</a>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="14"
-          height="14"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <polyline points="9 18 15 12 9 6" />
-        </svg>
-        <span class="breadcrumb-current" id="breadcrumb-product-name"
-          >Product</span
-        >
+        <span class="breadcrumb-current">Services</span>
       </div>
 
-      <!-- Product Hero Section -->
-      <div class="product-hero" id="product-hero">
-        <!-- Image Gallery -->
-        <div class="product-gallery" id="product-gallery">
-          <div class="product-gallery-main" id="product-gallery-main">
-            <img src="" alt="" id="product-main-image" />
-          </div>
-          <div
-            class="product-gallery-thumbnails"
-            id="product-gallery-thumbnails"
-          >
-            <!-- Thumbnails injected by JS -->
-          </div>
+      <!-- Page Heading -->
+      <div class="services-header">
+        <h1 class="services-title">Our Services</h1>
+        <p class="services-subtitle">
+          Expert care and support for every Eldio product
+        </p>
+      </div>
+
+      <!-- Intro -->
+      <section class="services-intro" id="services-intro">
+        <div class="services-intro-content">
+          <span class="services-intro-kicker">What We Offer</span>
+          <h2 class="services-intro-heading">
+            Beyond the Product — <br />Premium Service Included
+          </h2>
+          <p class="services-intro-text">
+            At Eldio, our commitment to you doesn't end at checkout. From
+            expert repairs and custom audio tuning to dedicated customer
+            support, we provide a full range of services designed to keep your
+            experience exceptional.
+          </p>
         </div>
+      </section>
 
-        <!-- Product Details Panel -->
-        <div class="product-detail-panel" id="product-detail-panel">
-          <div class="product-detail-badge" id="product-detail-badge"></div>
-          <h1 class="product-detail-name" id="product-detail-name"></h1>
-          <p class="product-detail-model" id="product-detail-model"></p>
-          <p class="product-detail-price" id="product-detail-price"></p>
-          <p class="product-detail-desc" id="product-detail-desc"></p>
-
-          <div class="product-detail-actions">
-            <div class="product-detail-qty" id="product-detail-qty">
-              <button
-                class="product-detail-qty-btn"
-                id="product-detail-qty-minus"
-                aria-label="Decrease quantity"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <line x1="5" y1="12" x2="19" y2="12" />
-                </svg>
-              </button>
-              <span
-                class="product-detail-qty-value"
-                id="product-detail-qty-value"
-                >1</span
-              >
-              <button
-                class="product-detail-qty-btn"
-                id="product-detail-qty-plus"
-                aria-label="Increase quantity"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <line x1="12" y1="5" x2="12" y2="19" />
-                  <line x1="5" y1="12" x2="19" y2="12" />
-                </svg>
-              </button>
-            </div>
-            <button class="product-detail-add-btn" id="product-detail-add-btn">
+      <!-- Services Grid -->
+      <section class="services-grid-section" id="services-grid-section">
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <div class="service-card">
+            <div class="service-card-icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
+                width="28"
+                height="28"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
+                stroke-width="1.5"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               >
-                <circle cx="9" cy="21" r="1" />
-                <circle cx="20" cy="21" r="1" />
-                <path
-                  d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
-                />
-                <line x1="12" y1="9" x2="12" y2="13" />
-                <line x1="10" y1="11" x2="14" y2="11" />
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
               </svg>
-              Add to Cart
-            </button>
-            <button
-              class="product-detail-fav-btn"
-              id="product-detail-fav-btn"
-              aria-label="Add to favourites"
-            >
+            </div>
+            <h3 class="service-card-title">Repairs & Maintenance</h3>
+            <p class="service-card-text">
+              From driver replacements to battery services and general
+              maintenance, our certified technicians restore your devices to
+              peak performance.
+            </p>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card">
+            <div class="service-card-icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="22"
-                height="22"
+                width="28"
+                height="28"
                 viewBox="0 0 24 24"
+                fill="none"
                 stroke="currentColor"
-                stroke-width="2"
+                stroke-width="1.5"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               >
-                <path
-                  d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
-                />
+                <circle cx="12" cy="12" r="10" />
+                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                <line x1="12" y1="17" x2="12.01" y2="17" />
               </svg>
-            </button>
+            </div>
+            <h3 class="service-card-title">Audio Consultation</h3>
+            <p class="service-card-text">
+              Not sure which setup fits your lifestyle? Our audio experts help
+              you choose the perfect headphones, earbuds, or speakers for your
+              needs.
+            </p>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card">
+            <div class="service-card-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 20h9" />
+                <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
+              </svg>
+            </div>
+            <h3 class="service-card-title">Custom Tuning</h3>
+            <p class="service-card-text">
+              Fine-tune your audio experience with personalized EQ profiles,
+              soundstage calibration, and custom listening presets tailored to
+              your preferences.
+            </p>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="service-card">
+            <div class="service-card-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2" />
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2" />
+                <line x1="6" y1="6" x2="6.01" y2="6" />
+                <line x1="6" y1="18" x2="6.01" y2="18" />
+              </svg>
+            </div>
+            <h3 class="service-card-title">Installation Setup</h3>
+            <p class="service-card-text">
+              Professional installation and configuration for speakers, home
+              audio systems, and smart audio setups — in-home or virtual
+              guidance.
+            </p>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="service-card">
+            <div class="service-card-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <h3 class="service-card-title">Extended Warranty</h3>
+            <p class="service-card-text">
+              Protect your investment with our extended warranty plans covering
+              accidental damage, defects, and priority support for up to three
+              years.
+            </p>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="service-card">
+            <div class="service-card-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
+            <h3 class="service-card-title">Bulk & Corporate</h3>
+            <p class="service-card-text">
+              Volume pricing, customized bulk orders, and dedicated account
+              management for businesses, schools, and organizations.
+            </p>
           </div>
         </div>
-      </div>
-
-      <!-- Specifications Section -->
-      <section class="product-specs-section" id="product-specs-section">
-        <h2 class="product-specs-heading">Specifications</h2>
-        <table class="product-specs-table" id="product-specs-table">
-          <tbody id="product-specs-body">
-            <!-- Injected by JS -->
-          </tbody>
-        </table>
       </section>
 
-      <!-- You May Also Like Section -->
-      <section class="related-products" id="related-products">
-        <h2 class="related-products-heading">You May Also Like</h2>
-        <div class="related-products-grid" id="related-products-grid">
-          <!-- Injected by JS -->
+      <!-- How It Works -->
+      <section class="services-process" id="services-process">
+        <h2 class="services-process-heading">How It Works</h2>
+        <div class="services-process-grid">
+          <div class="services-process-step">
+            <span class="services-process-number">01</span>
+            <h3 class="services-process-title">Reach Out</h3>
+            <p class="services-process-text">
+              Contact us via phone, email, or visit our support center to
+              describe your needs.
+            </p>
+          </div>
+          <div class="services-process-step">
+            <span class="services-process-number">02</span>
+            <h3 class="services-process-title">Get a Quote</h3>
+            <p class="services-process-text">
+              We assess your request and provide a transparent quote with no
+              hidden fees.
+            </p>
+          </div>
+          <div class="services-process-step">
+            <span class="services-process-number">03</span>
+            <h3 class="services-process-title">Service Delivery</h3>
+            <p class="services-process-text">
+              Our experts handle your service with care and keep you updated
+              every step of the way.
+            </p>
+          </div>
+          <div class="services-process-step">
+            <span class="services-process-number">04</span>
+            <h3 class="services-process-title">Enjoy & Follow Up</h3>
+            <p class="services-process-text">
+              Once complete, we follow up to make sure everything meets your
+              expectations.
+            </p>
+          </div>
         </div>
       </section>
 
-      <!-- 404 Empty State -->
-      <div
-        class="product-not-found"
-        id="product-not-found"
-        style="display: none"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="64"
-          height="64"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="1"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <circle cx="11" cy="11" r="8" />
-          <line x1="21" y1="21" x2="16.65" y2="16.65" />
-        </svg>
-        <h3 class="cart-empty-title">Product not found</h3>
-        <p class="cart-empty-text">
-          The product you're looking for doesn't exist or has been removed.
+      <!-- CTA -->
+      <section class="services-cta" id="services-cta">
+        <h2 class="services-cta-heading">Need help with your audio?</h2>
+        <p class="services-cta-text">
+          Our team is ready to assist with repairs, tuning, or any questions you
+          have.
         </p>
-        <a href="products.html" class="cart-empty-cta">
-          Browse Products <span class="cta-arrow">→</span>
-        </a>
-      </div>
+        <div class="services-cta-buttons">
+          <a href="contact.html" class="services-cta-btn services-cta-btn-primary">
+            Contact Us
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </a>
+          <a href="products.html" class="services-cta-btn services-cta-btn-secondary">
+            Browse Products
+          </a>
+        </div>
+      </section>
     </main>
 
     <footer class="footer" id="footer">
@@ -652,7 +728,6 @@
       </div>
     </footer>
 
-    <!-- Favourites Modal -->
     <div class="favourites-modal-overlay" id="favourites-modal">
       <div class="favourites-modal">
         <div class="favourites-modal-header">
@@ -667,83 +742,6 @@
         </div>
         <div class="favourites-modal-body" id="favourites-modal-body">
           <p class="favourites-empty">No favourites yet.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Product Modal -->
-    <div class="product-modal-overlay" id="product-modal">
-      <div class="product-modal">
-        <div class="product-modal-header">
-          <h2 class="product-modal-title" id="product-modal-title">Product</h2>
-          <button
-            class="product-modal-close"
-            id="product-modal-close"
-            aria-label="Close product modal"
-          >
-            &times;
-          </button>
-        </div>
-        <div class="product-modal-body">
-          <div class="product-modal-image-wrapper">
-            <img
-              class="product-modal-image"
-              id="product-modal-image"
-              src=""
-              alt=""
-            />
-          </div>
-          <div class="product-modal-info">
-            <p class="product-modal-model" id="product-modal-model"></p>
-            <p class="product-modal-price" id="product-modal-price"></p>
-            <div class="product-modal-qty">
-              <button
-                class="product-modal-qty-btn"
-                id="product-modal-qty-minus"
-                aria-label="Decrease quantity"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <line x1="5" y1="12" x2="19" y2="12" />
-                </svg>
-              </button>
-              <span class="product-modal-qty-value" id="product-modal-qty-value"
-                >1</span
-              >
-              <button
-                class="product-modal-qty-btn"
-                id="product-modal-qty-plus"
-                aria-label="Increase quantity"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <line x1="12" y1="5" x2="12" y2="19" />
-                  <line x1="5" y1="12" x2="19" y2="12" />
-                </svg>
-              </button>
-            </div>
-            <button class="product-modal-add-btn" id="product-modal-add-btn">
-              Add to Cart
-            </button>
-          </div>
         </div>
       </div>
     </div>
@@ -790,7 +788,5 @@
     <script src="auth.js"></script>
     <script src="search.js"></script>
     <script src="favourite.js"></script>
-    <script src="products.js"></script>
-    <script src="product-page.js"></script>
   </body>
 </html>

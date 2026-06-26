@@ -3926,3 +3926,1081 @@ img {
         margin: 0 auto;
     }
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   ABOUT PAGE
+   ═══════════════════════════════════════════════════════════════ */
+
+.about-page-header {
+    background-color: #002045;
+}
+
+.about-page {
+    background-color: #f5f7fb;
+    padding: 40px 60px 80px;
+    min-height: 60vh;
+}
+
+.about-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+/* ── Header ── */
+.about-header {
+    margin-bottom: 48px;
+}
+
+.about-title {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 800;
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    color: #0a1628;
+    letter-spacing: -0.01em;
+    margin-bottom: 6px;
+}
+
+.about-subtitle {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #5a6e85;
+}
+
+/* ── Our Story ── */
+.about-story {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    background: linear-gradient(135deg, #091428 0%, #0b1a33 40%, #0d1f3c 100%);
+    border-radius: 20px;
+    padding: 60px;
+    margin-bottom: 60px;
+}
+
+.about-story-image {
+    flex: 0 0 380px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.about-story-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+}
+
+.about-story-text {
+    flex: 1;
+}
+
+.about-story-kicker {
+    display: inline-block;
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #978bff;
+    margin-bottom: 8px;
+}
+
+.about-story-heading {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+.about-story-paragraph {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.92rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 16px;
+}
+
+.about-story-paragraph:last-child {
+    margin-bottom: 0;
+}
+
+/* ── Mission & Vision ── */
+.about-mission {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 60px;
+}
+
+.about-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 36px 32px;
+    box-shadow: 0 2px 12px rgba(10, 22, 40, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(10, 22, 40, 0.1);
+}
+
+.about-card-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background-color: #eef4ff;
+    color: #0E56AA;
+    margin-bottom: 20px;
+}
+
+.about-card-title {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #0a1628;
+    margin-bottom: 12px;
+}
+
+.about-card-text {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #5a6e85;
+}
+
+/* ── Stats ── */
+.about-stats {
+    background: linear-gradient(135deg, #091428 0%, #0b1a33 40%, #0d1f3c 100%);
+    border-radius: 20px;
+    padding: 60px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.about-stats-heading {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.3rem, 2vw, 1.7rem);
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.about-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.about-stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.about-stat-number {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 800;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    color: #ffffff;
+}
+
+.about-stat-label {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.88rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* ── Values ── */
+.about-values {
+    margin-bottom: 60px;
+}
+
+.about-values-heading {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.3rem, 2vw, 1.7rem);
+    color: #0a1628;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.about-value-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 36px 28px;
+    box-shadow: 0 2px 12px rgba(10, 22, 40, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-value-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(10, 22, 40, 0.1);
+}
+
+.about-value-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #eef4ff;
+    color: #0E56AA;
+    margin-bottom: 20px;
+}
+
+.about-value-title {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #0a1628;
+    margin-bottom: 12px;
+}
+
+.about-value-text {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.88rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #5a6e85;
+}
+
+/* ── CTA ── */
+.about-cta {
+    text-align: center;
+    padding: 60px 40px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 2px 12px rgba(10, 22, 40, 0.05);
+}
+
+.about-cta-heading {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.3rem, 2vw, 1.7rem);
+    color: #0a1628;
+    margin-bottom: 12px;
+}
+
+.about-cta-text {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #5a6e85;
+    margin-bottom: 28px;
+}
+
+.about-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #0E56AA;
+    color: #ffffff;
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.about-cta-btn:hover {
+    background-color: #2468d8;
+    transform: translateY(-2px);
+}
+
+.about-cta-btn svg {
+    transition: transform 0.3s ease;
+}
+
+.about-cta-btn:hover svg {
+    transform: translateX(4px);
+}
+
+/* ── About Page Responsive ── */
+@media (max-width: 1024px) {
+    .about-story {
+        flex-direction: column;
+        gap: 36px;
+        padding: 40px;
+    }
+
+    .about-story-image {
+        flex: none;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .about-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .about-values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .about-page {
+        padding: 24px 20px 50px;
+    }
+
+    .about-story {
+        padding: 30px 24px;
+    }
+
+    .about-mission {
+        grid-template-columns: 1fr;
+    }
+
+    .about-stats {
+        padding: 40px 24px;
+    }
+
+    .about-values-grid {
+        grid-template-columns: 1fr;
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .about-cta {
+        padding: 40px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-stats-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .about-card {
+        padding: 28px 20px;
+    }
+
+    .about-value-card {
+        padding: 28px 20px;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   SERVICES PAGE
+   ═══════════════════════════════════════════════════════════════ */
+
+.services-page-header {
+    background-color: #002045;
+}
+
+.services-page {
+    background-color: #f5f7fb;
+    padding: 40px 60px 80px;
+    min-height: 60vh;
+}
+
+.services-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+/* ── Header ── */
+.services-header {
+    margin-bottom: 48px;
+}
+
+.services-title {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 800;
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    color: #0a1628;
+    letter-spacing: -0.01em;
+    margin-bottom: 6px;
+}
+
+.services-subtitle {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #5a6e85;
+}
+
+/* ── Intro ── */
+.services-intro {
+    background: linear-gradient(135deg, #091428 0%, #0b1a33 40%, #0d1f3c 100%);
+    border-radius: 20px;
+    padding: 60px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.services-intro-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.services-intro-kicker {
+    display: inline-block;
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #978bff;
+    margin-bottom: 8px;
+}
+
+.services-intro-heading {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    color: #ffffff;
+    margin-bottom: 16px;
+    line-height: 1.3;
+}
+
+.services-intro-text {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.92rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+/* ── Services Grid ── */
+.services-grid-section {
+    margin-bottom: 60px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.service-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 36px 28px;
+    box-shadow: 0 2px 12px rgba(10, 22, 40, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(10, 22, 40, 0.1);
+}
+
+.service-card-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background-color: #eef4ff;
+    color: #0E56AA;
+    margin-bottom: 20px;
+}
+
+.service-card-title {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #0a1628;
+    margin-bottom: 12px;
+}
+
+.service-card-text {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.88rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #5a6e85;
+}
+
+/* ── Process ── */
+.services-process {
+    margin-bottom: 60px;
+}
+
+.services-process-heading {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.3rem, 2vw, 1.7rem);
+    color: #0a1628;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.services-process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.services-process-step {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 32px 24px;
+    box-shadow: 0 2px 12px rgba(10, 22, 40, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services-process-step:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(10, 22, 40, 0.1);
+}
+
+.services-process-number {
+    display: inline-block;
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 800;
+    font-size: 1.8rem;
+    color: #0E56AA;
+    opacity: 0.3;
+    margin-bottom: 12px;
+    line-height: 1;
+}
+
+.services-process-title {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #0a1628;
+    margin-bottom: 8px;
+}
+
+.services-process-text {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.85rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #5a6e85;
+}
+
+/* ── CTA ── */
+.services-cta {
+    text-align: center;
+    padding: 60px 40px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 2px 12px rgba(10, 22, 40, 0.05);
+}
+
+.services-cta-heading {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.3rem, 2vw, 1.7rem);
+    color: #0a1628;
+    margin-bottom: 12px;
+}
+
+.services-cta-text {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #5a6e85;
+    margin-bottom: 28px;
+}
+
+.services-cta-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.services-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.services-cta-btn-primary {
+    background-color: #0E56AA;
+    color: #ffffff;
+}
+
+.services-cta-btn-primary:hover {
+    background-color: #2468d8;
+    transform: translateY(-2px);
+}
+
+.services-cta-btn-primary svg {
+    transition: transform 0.3s ease;
+}
+
+.services-cta-btn-primary:hover svg {
+    transform: translateX(4px);
+}
+
+.services-cta-btn-secondary {
+    background-color: transparent;
+    color: #0a1628;
+    border: 2px solid #dce4f0;
+}
+
+.services-cta-btn-secondary:hover {
+    border-color: #0E56AA;
+    color: #0E56AA;
+    transform: translateY(-2px);
+}
+
+/* ── Services Page Responsive ── */
+@media (max-width: 1024px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .services-page {
+        padding: 24px 20px 50px;
+    }
+
+    .services-intro {
+        padding: 40px 24px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .services-process-grid {
+        grid-template-columns: 1fr;
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .services-cta {
+        padding: 40px 24px;
+    }
+
+    .services-cta-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .services-cta-btn {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-card {
+        padding: 28px 20px;
+    }
+
+    .services-process-step {
+        padding: 24px 20px;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   COMMUNITY PAGE
+   ═══════════════════════════════════════════════════════════════ */
+
+.community-page-header {
+    background-color: #002045;
+}
+
+.community-page {
+    background-color: #f5f7fb;
+    padding: 40px 60px 80px;
+    min-height: 60vh;
+}
+
+.community-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+/* ── Header ── */
+.community-header {
+    margin-bottom: 48px;
+}
+
+.community-title {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 800;
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    color: #0a1628;
+    letter-spacing: -0.01em;
+    margin-bottom: 6px;
+}
+
+.community-subtitle {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #5a6e85;
+}
+
+/* ── Intro ── */
+.community-intro {
+    background: linear-gradient(135deg, #091428 0%, #0b1a33 40%, #0d1f3c 100%);
+    border-radius: 20px;
+    padding: 60px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.community-intro-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.community-intro-kicker {
+    display: inline-block;
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #978bff;
+    margin-bottom: 8px;
+}
+
+.community-intro-heading {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    color: #ffffff;
+    margin-bottom: 16px;
+    line-height: 1.3;
+}
+
+.community-intro-text {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.92rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+/* ── Features Grid ── */
+.community-features {
+    margin-bottom: 60px;
+}
+
+.community-features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.community-feature-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 36px 28px;
+    box-shadow: 0 2px 12px rgba(10, 22, 40, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.community-feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(10, 22, 40, 0.1);
+}
+
+.community-feature-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background-color: #eef4ff;
+    color: #0E56AA;
+    margin-bottom: 20px;
+}
+
+.community-feature-title {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #0a1628;
+    margin-bottom: 12px;
+}
+
+.community-feature-text {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.88rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #5a6e85;
+}
+
+/* ── Stats ── */
+.community-stats {
+    background: linear-gradient(135deg, #091428 0%, #0b1a33 40%, #0d1f3c 100%);
+    border-radius: 20px;
+    padding: 60px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.community-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.community-stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.community-stat-number {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 800;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    color: #ffffff;
+}
+
+.community-stat-label {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.88rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* ── Join / Ways to Connect ── */
+.community-join {
+    margin-bottom: 60px;
+}
+
+.community-join-heading {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.3rem, 2vw, 1.7rem);
+    color: #0a1628;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.community-join-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.community-join-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 36px 28px 32px;
+    box-shadow: 0 2px 12px rgba(10, 22, 40, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.community-join-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(10, 22, 40, 0.1);
+}
+
+.community-join-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #eef4ff;
+    color: #0E56AA;
+    margin-bottom: 20px;
+}
+
+.community-join-title {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #0a1628;
+    margin-bottom: 10px;
+}
+
+.community-join-text {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.88rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #5a6e85;
+    margin-bottom: 20px;
+}
+
+.community-join-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #0E56AA;
+    transition: gap 0.3s ease;
+}
+
+.community-join-link:hover {
+    gap: 10px;
+}
+
+.community-join-link svg {
+    transition: transform 0.3s ease;
+}
+
+.community-join-link:hover svg {
+    transform: translateX(4px);
+}
+
+/* ── CTA ── */
+.community-cta {
+    text-align: center;
+    padding: 60px 40px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 2px 12px rgba(10, 22, 40, 0.05);
+}
+
+.community-cta-heading {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.3rem, 2vw, 1.7rem);
+    color: #0a1628;
+    margin-bottom: 12px;
+}
+
+.community-cta-text {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #5a6e85;
+    margin-bottom: 28px;
+}
+
+.community-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #0E56AA;
+    color: #ffffff;
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.community-cta-btn:hover {
+    background-color: #2468d8;
+    transform: translateY(-2px);
+}
+
+.community-cta-btn svg {
+    transition: transform 0.3s ease;
+}
+
+.community-cta-btn:hover svg {
+    transform: translateX(4px);
+}
+
+/* ── Community Page Responsive ── */
+@media (max-width: 1024px) {
+    .community-features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .community-join-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .community-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .community-page {
+        padding: 24px 20px 50px;
+    }
+
+    .community-intro {
+        padding: 40px 24px;
+    }
+
+    .community-features-grid {
+        grid-template-columns: 1fr;
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .community-join-grid {
+        grid-template-columns: 1fr;
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .community-stats {
+        padding: 40px 24px;
+    }
+
+    .community-cta {
+        padding: 40px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .community-feature-card {
+        padding: 28px 20px;
+    }
+
+    .community-join-card {
+        padding: 28px 20px;
+    }
+
+    .community-stats-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
