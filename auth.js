@@ -133,7 +133,9 @@
           openModal();
         };
       } else {
-        profileIcon.onclick = null;
+        profileIcon.onclick = function (e) {
+          window.location.href = "login.html";
+        };
       }
     }
 
