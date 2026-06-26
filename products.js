@@ -139,14 +139,14 @@
     },
     {
       id: "product-charger-wireless",
-      name: "Wireless Charger",
+      name: "Charger",
       model: "MagPad Pro 15W",
       price: 16000,
       image: "img/Chargers.png",
       category: "Chargers",
       dateAdded: "2026-06-01T13:00:00Z",
       popularity: 72,
-      description: "Effortless wireless charging with 15W fast charging for all Qi-compatible devices. Sleek pad design with LED indicator.",
+      description: "Effortless charging with 15W fast charging for all Qi-compatible devices. Sleek pad design with LED indicator.",
       specs: { "Output Power": "15W (Qi)", "Input": "USB-C 18W", "Charging Speed": "0\u201350% in 45 min", "Compatibility": "All Qi devices", "Weight": "95g" },
     },
     {
