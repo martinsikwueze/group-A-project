@@ -1,16 +1,16 @@
 - [x] about us page
 - [x] services page
 - [x] community page
-- [] Testimonial
+- [x] Testimonial
 
-- [] Eldio Analytics
-- [] Chat Us
-- [] Our Platform
+- [x] Eldio Analytics
+- [x] Chat Us
+- [x] Our Platform
 
-- [] Documentation
-- [] Blog
-- [] Support Center
-- [] Community
+- [x] Documentation
+- [x] Blog
+- [x] Support Center
+- [x] Community
 
 
 - [] Privacy Policy

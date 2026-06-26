@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Eldio services - expert audio repairs, custom setups, consultations, and premium support for all your audio needs."
+      content="Eldio Analytics - Gain deep insights into audio performance, customer behavior, and product trends with our powerful analytics platform."
     />
-    <title>Services – Eldio | Premium Audio Technology</title>
+    <title>Eldio Analytics – Eldio | Premium Audio Technology</title>
     <link rel="icon" href="img/logo.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="services-page-header" id="services-page-header">
+    <header class="analytics-page-header" id="analytics-page-header">
       <nav class="navbar" id="navbar">
         <a href="index.html" class="nav-logo" id="nav-logo">
           <img src="img/logo.png" alt="Eldio Logo" />
@@ -26,7 +26,9 @@
 
         <ul class="nav-links" id="nav-links">
           <li><a href="index.html" class="nav-link" id="nav-home">Home</a></li>
-          <li><a href="about.html" class="nav-link" id="nav-about">About Us</a></li>
+          <li>
+            <a href="about.html" class="nav-link" id="nav-about">About Us</a>
+          </li>
           <li>
             <a href="products.html" class="nav-link" id="nav-products">Products</a>
           </li>
@@ -251,9 +253,9 @@
 
     <script src="responsive.js"></script>
 
-    <main class="services-page" id="services-page">
+    <main class="analytics-page" id="analytics-page">
       <!-- Breadcrumb -->
-      <div class="services-breadcrumb">
+      <div class="analytics-breadcrumb">
         <a href="index.html" class="breadcrumb-link">Home</a>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -268,39 +270,37 @@
         >
           <polyline points="9 18 15 12 9 6" />
         </svg>
-        <span class="breadcrumb-current">Services</span>
+        <span class="breadcrumb-current">Eldio Analytics</span>
       </div>
 
       <!-- Page Heading -->
-      <div class="services-header">
-        <h1 class="services-title">Our Services</h1>
-        <p class="services-subtitle">
-          Expert care and support for every Eldio product
+      <div class="analytics-header">
+        <h1 class="analytics-title">Eldio Analytics</h1>
+        <p class="analytics-subtitle">
+          Data-driven insights for smarter audio experiences
         </p>
       </div>
 
       <!-- Intro -->
-      <section class="services-intro" id="services-intro">
-        <div class="services-intro-content">
-          <span class="services-intro-kicker">What We Offer</span>
-          <h2 class="services-intro-heading">
-            Beyond the Product — <br />Premium Service Included
+      <section class="analytics-intro" id="analytics-intro">
+        <div class="analytics-intro-content">
+          <span class="analytics-intro-kicker">Powered by Data</span>
+          <h2 class="analytics-intro-heading">
+            Understand Your Sound,<br />Optimize Your Experience
           </h2>
-          <p class="services-intro-text">
-            At Eldio, our commitment to you doesn't end at checkout. From
-            expert repairs and custom audio tuning to dedicated customer
-            support, we provide a full range of services designed to keep your
-            experience exceptional.
+          <p class="analytics-intro-text">
+            Eldio Analytics gives you a powerful lens into how you listen, what
+            you love, and how your gear performs. From personalized listening
+            insights to product usage trends, make every decision with confidence.
           </p>
         </div>
       </section>
 
-      <!-- Services Grid -->
-      <section class="services-grid-section" id="services-grid-section">
-        <div class="services-grid">
-          <!-- Service 1 -->
-          <div class="service-card">
-            <div class="service-card-icon">
+      <!-- Features Grid -->
+      <section class="analytics-features" id="analytics-features">
+        <div class="analytics-features-grid">
+          <div class="analytics-feature-card">
+            <div class="analytics-feature-icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="28"
@@ -312,20 +312,20 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
               >
-                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                <path d="M12 20V10" />
+                <path d="M18 20V4" />
+                <path d="M6 20v-4" />
               </svg>
             </div>
-            <h3 class="service-card-title">Repairs & Maintenance</h3>
-            <p class="service-card-text">
-              From driver replacements to battery services and general
-              maintenance, our certified technicians restore your devices to
-              peak performance.
+            <h3 class="analytics-feature-title">Usage Trends</h3>
+            <p class="analytics-feature-text">
+              Track how you use your devices over time — from listening hours to
+              feature adoption — and discover patterns in your audio habits.
             </p>
           </div>
 
-          <!-- Service 2 -->
-          <div class="service-card">
-            <div class="service-card-icon">
+          <div class="analytics-feature-card">
+            <div class="analytics-feature-icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="28"
@@ -337,76 +337,22 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
               >
-                <circle cx="12" cy="12" r="10" />
-                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
-                <line x1="12" y1="17" x2="12.01" y2="17" />
+                <path d="M2 20h20" />
+                <path d="M4 20V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12" />
+                <path d="M8 20v-4" />
+                <path d="M12 20v-8" />
+                <path d="M16 20v-2" />
               </svg>
             </div>
-            <h3 class="service-card-title">Audio Consultation</h3>
-            <p class="service-card-text">
-              Not sure which setup fits your lifestyle? Our audio experts help
-              you choose the perfect headphones, earbuds, or speakers for your
-              needs.
+            <h3 class="analytics-feature-title">Performance Metrics</h3>
+            <p class="analytics-feature-text">
+              Monitor battery health, connection stability, and audio output
+              quality to keep your devices running at their peak.
             </p>
           </div>
 
-          <!-- Service 3 -->
-          <div class="service-card">
-            <div class="service-card-icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="28"
-                height="28"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M12 20h9" />
-                <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
-              </svg>
-            </div>
-            <h3 class="service-card-title">Custom Tuning</h3>
-            <p class="service-card-text">
-              Fine-tune your audio experience with personalized EQ profiles,
-              soundstage calibration, and custom listening presets tailored to
-              your preferences.
-            </p>
-          </div>
-
-          <!-- Service 4 -->
-          <div class="service-card">
-            <div class="service-card-icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="28"
-                height="28"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <rect x="2" y="2" width="20" height="8" rx="2" ry="2" />
-                <rect x="2" y="14" width="20" height="8" rx="2" ry="2" />
-                <line x1="6" y1="6" x2="6.01" y2="6" />
-                <line x1="6" y1="18" x2="6.01" y2="18" />
-              </svg>
-            </div>
-            <h3 class="service-card-title">Installation Setup</h3>
-            <p class="service-card-text">
-              Professional installation and configuration for speakers, home
-              audio systems, and smart audio setups — in-home or virtual
-              guidance.
-            </p>
-          </div>
-
-          <!-- Service 5 -->
-          <div class="service-card">
-            <div class="service-card-icon">
+          <div class="analytics-feature-card">
+            <div class="analytics-feature-icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="28"
@@ -421,17 +367,15 @@
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
               </svg>
             </div>
-            <h3 class="service-card-title">Extended Warranty</h3>
-            <p class="service-card-text">
-              Protect your investment with our extended warranty plans covering
-              accidental damage, defects, and priority support for up to three
-              years.
+            <h3 class="analytics-feature-title">Sound Profiling</h3>
+            <p class="analytics-feature-text">
+              Get a detailed breakdown of your listening preferences — genres,
+              volume levels, EQ settings — and receive personalized recommendations.
             </p>
           </div>
 
-          <!-- Service 6 -->
-          <div class="service-card">
-            <div class="service-card-icon">
+          <div class="analytics-feature-card">
+            <div class="analytics-feature-icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="28"
@@ -443,89 +387,114 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
               >
-                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
                 <circle cx="9" cy="7" r="4" />
-                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
                 <path d="M16 3.13a4 4 0 0 1 0 7.75" />
               </svg>
             </div>
-            <h3 class="service-card-title">Bulk & Corporate</h3>
-            <p class="service-card-text">
-              Volume pricing, customized bulk orders, and dedicated account
-              management for businesses, schools, and organizations.
+            <h3 class="analytics-feature-title">Audience Insights</h3>
+            <p class="analytics-feature-text">
+              For creators and businesses, understand your audience's audio
+              behavior across devices and environments with aggregate analytics.
+            </p>
+          </div>
+
+          <div class="analytics-feature-card">
+            <div class="analytics-feature-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 16v-4" />
+                <path d="M12 8h.01" />
+              </svg>
+            </div>
+            <h3 class="analytics-feature-title">Health Monitoring</h3>
+            <p class="analytics-feature-text">
+              Keep track of device health indicators, firmware status, and
+              proactive maintenance alerts to prevent issues before they arise.
+            </p>
+          </div>
+
+          <div class="analytics-feature-card">
+            <div class="analytics-feature-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+              </svg>
+            </div>
+            <h3 class="analytics-feature-title">Trend Reports</h3>
+            <p class="analytics-feature-text">
+              Access weekly and monthly reports that highlight changes in your
+              audio habits, device performance, and emerging listening trends.
             </p>
           </div>
         </div>
       </section>
 
-      <!-- How It Works -->
-      <section class="services-process" id="services-process">
-        <h2 class="services-process-heading">How It Works</h2>
-        <div class="services-process-grid">
-          <div class="services-process-step">
-            <span class="services-process-number">01</span>
-            <h3 class="services-process-title">Reach Out</h3>
-            <p class="services-process-text">
-              Contact us via phone, email, or visit our support center to
-              describe your needs.
-            </p>
+      <!-- Stats -->
+      <section class="analytics-stats" id="analytics-stats">
+        <div class="analytics-stats-grid">
+          <div class="analytics-stat-item">
+            <span class="analytics-stat-number">10M+</span>
+            <span class="analytics-stat-label">Data Points Processed</span>
           </div>
-          <div class="services-process-step">
-            <span class="services-process-number">02</span>
-            <h3 class="services-process-title">Get a Quote</h3>
-            <p class="services-process-text">
-              We assess your request and provide a transparent quote with no
-              hidden fees.
-            </p>
+          <div class="analytics-stat-item">
+            <span class="analytics-stat-number">99.9%</span>
+            <span class="analytics-stat-label">Uptime Guarantee</span>
           </div>
-          <div class="services-process-step">
-            <span class="services-process-number">03</span>
-            <h3 class="services-process-title">Service Delivery</h3>
-            <p class="services-process-text">
-              Our experts handle your service with care and keep you updated
-              every step of the way.
-            </p>
+          <div class="analytics-stat-item">
+            <span class="analytics-stat-number">50K+</span>
+            <span class="analytics-stat-label">Active Users</span>
           </div>
-          <div class="services-process-step">
-            <span class="services-process-number">04</span>
-            <h3 class="services-process-title">Enjoy & Follow Up</h3>
-            <p class="services-process-text">
-              Once complete, we follow up to make sure everything meets your
-              expectations.
-            </p>
+          <div class="analytics-stat-item">
+            <span class="analytics-stat-number">Real-Time</span>
+            <span class="analytics-stat-label">Data Sync</span>
           </div>
         </div>
       </section>
 
       <!-- CTA -->
-      <section class="services-cta" id="services-cta">
-        <h2 class="services-cta-heading">Need help with your audio?</h2>
-        <p class="services-cta-text">
-          Our team is ready to assist with repairs, tuning, or any questions you
-          have.
+      <section class="analytics-cta" id="analytics-cta">
+        <h2 class="analytics-cta-heading">Ready to see the bigger picture?</h2>
+        <p class="analytics-cta-text">
+          Unlock the full power of your audio data with Eldio Analytics.
         </p>
-        <div class="services-cta-buttons">
-          <a href="contact.html" class="services-cta-btn services-cta-btn-primary">
-            Contact Us
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <line x1="5" y1="12" x2="19" y2="12" />
-              <polyline points="12 5 19 12 12 19" />
-            </svg>
-          </a>
-          <a href="products.html" class="services-cta-btn services-cta-btn-secondary">
-            Browse Products
-          </a>
-        </div>
+        <a href="products.html" class="analytics-cta-btn">
+          Explore Products
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </a>
       </section>
     </main>
 
@@ -746,7 +715,6 @@
       </div>
     </div>
 
-    <!-- User Modal -->
     <div class="user-modal-overlay" id="user-modal">
       <div class="user-modal">
         <div class="user-modal-header">

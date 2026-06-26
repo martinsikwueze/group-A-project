@@ -5004,3 +5004,2394 @@ img {
         gap: 20px;
     }
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   TESTIMONIAL PAGE
+   ═══════════════════════════════════════════════════════════════ */
+
+.testimonial-page-header {
+    background-color: #002045;
+}
+
+.testimonial-page {
+    background-color: #f5f7fb;
+    padding: 40px 60px 80px;
+    min-height: 60vh;
+}
+
+.testimonial-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+/* ── Header ── */
+.testimonial-header {
+    margin-bottom: 48px;
+}
+
+.testimonial-title {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 800;
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    color: #0a1628;
+    letter-spacing: -0.01em;
+    margin-bottom: 6px;
+}
+
+.testimonial-subtitle {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #5a6e85;
+}
+
+/* ── Intro ── */
+.testimonial-intro {
+    background: linear-gradient(135deg, #091428 0%, #0b1a33 40%, #0d1f3c 100%);
+    border-radius: 20px;
+    padding: 60px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.testimonial-intro-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.testimonial-intro-kicker {
+    display: inline-block;
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #978bff;
+    margin-bottom: 8px;
+}
+
+.testimonial-intro-heading {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    color: #ffffff;
+    margin-bottom: 16px;
+    line-height: 1.3;
+}
+
+.testimonial-intro-text {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.92rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+/* ── Featured ── */
+.testimonial-featured {
+    margin-bottom: 60px;
+}
+
+.testimonial-featured-card {
+    background: linear-gradient(135deg, #0a1e3a 0%, #0c2340 50%, #0f2a4a 100%);
+    border-radius: 20px;
+    padding: 48px 48px 40px;
+    text-align: center;
+    position: relative;
+}
+
+.testimonial-featured-stars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: 24px;
+}
+
+.testimonial-featured-quote {
+    font-family: "Playfair Display", Georgia, serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 720px;
+    margin: 0 auto 28px;
+}
+
+.testimonial-featured-author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+.testimonial-featured-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #0E56AA;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.testimonial-featured-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.testimonial-featured-name {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.testimonial-featured-role {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.82rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+/* ── Grid ── */
+.testimonial-grid-section {
+    margin-bottom: 60px;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.testimonial-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 28px 24px;
+    box-shadow: 0 2px 12px rgba(10, 22, 40, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(10, 22, 40, 0.1);
+}
+
+.testimonial-card-stars {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin-bottom: 16px;
+}
+
+.testimonial-card-text {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.88rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #5a6e85;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.testimonial-card-author {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    border-top: 1px solid #eef2f7;
+    padding-top: 16px;
+}
+
+.testimonial-card-name {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #0a1628;
+}
+
+.testimonial-card-product {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #8a9bb5;
+}
+
+/* ── Stats ── */
+.testimonial-stats {
+    background: linear-gradient(135deg, #091428 0%, #0b1a33 40%, #0d1f3c 100%);
+    border-radius: 20px;
+    padding: 60px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.testimonial-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.testimonial-stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.testimonial-stat-number {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 800;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    color: #ffffff;
+}
+
+.testimonial-stat-label {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.88rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* ── CTA ── */
+.testimonial-cta {
+    text-align: center;
+    padding: 60px 40px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 2px 12px rgba(10, 22, 40, 0.05);
+}
+
+.testimonial-cta-heading {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.3rem, 2vw, 1.7rem);
+    color: #0a1628;
+    margin-bottom: 12px;
+}
+
+.testimonial-cta-text {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #5a6e85;
+    margin-bottom: 28px;
+}
+
+.testimonial-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #0E56AA;
+    color: #ffffff;
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.testimonial-cta-btn:hover {
+    background-color: #2468d8;
+    transform: translateY(-2px);
+}
+
+.testimonial-cta-btn svg {
+    transition: transform 0.3s ease;
+}
+
+.testimonial-cta-btn:hover svg {
+    transform: translateX(4px);
+}
+
+/* ── Testimonial Page Responsive ── */
+@media (max-width: 1024px) {
+    .testimonial-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonial-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonial-page {
+        padding: 24px 20px 50px;
+    }
+
+    .testimonial-intro {
+        padding: 40px 24px;
+    }
+
+    .testimonial-featured-card {
+        padding: 32px 24px 28px;
+    }
+
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .testimonial-stats {
+        padding: 40px 24px;
+    }
+
+    .testimonial-cta {
+        padding: 40px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonial-card {
+        padding: 24px 20px;
+    }
+
+    .testimonial-stats-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   ANALYTICS PAGE
+   ═══════════════════════════════════════════════════════════════ */
+
+.analytics-page-header {
+    background-color: #002045;
+}
+
+.analytics-page {
+    background-color: #f5f7fb;
+    padding: 40px 60px 80px;
+    min-height: 60vh;
+}
+
+.analytics-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+/* ── Header ── */
+.analytics-header {
+    margin-bottom: 48px;
+}
+
+.analytics-title {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 800;
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    color: #0a1628;
+    letter-spacing: -0.01em;
+    margin-bottom: 6px;
+}
+
+.analytics-subtitle {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #5a6e85;
+}
+
+/* ── Intro ── */
+.analytics-intro {
+    background: linear-gradient(135deg, #091428 0%, #0b1a33 40%, #0d1f3c 100%);
+    border-radius: 20px;
+    padding: 60px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.analytics-intro-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.analytics-intro-kicker {
+    display: inline-block;
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #978bff;
+    margin-bottom: 8px;
+}
+
+.analytics-intro-heading {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    color: #ffffff;
+    margin-bottom: 16px;
+    line-height: 1.3;
+}
+
+.analytics-intro-text {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.92rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+/* ── Features Grid ── */
+.analytics-features {
+    margin-bottom: 60px;
+}
+
+.analytics-features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.analytics-feature-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 36px 28px;
+    box-shadow: 0 2px 12px rgba(10, 22, 40, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.analytics-feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(10, 22, 40, 0.1);
+}
+
+.analytics-feature-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background-color: #eef4ff;
+    color: #0E56AA;
+    margin-bottom: 20px;
+}
+
+.analytics-feature-title {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #0a1628;
+    margin-bottom: 12px;
+}
+
+.analytics-feature-text {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.88rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #5a6e85;
+}
+
+/* ── Stats ── */
+.analytics-stats {
+    background: linear-gradient(135deg, #091428 0%, #0b1a33 40%, #0d1f3c 100%);
+    border-radius: 20px;
+    padding: 60px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.analytics-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.analytics-stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.analytics-stat-number {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 800;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    color: #ffffff;
+}
+
+.analytics-stat-label {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.88rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* ── CTA ── */
+.analytics-cta {
+    text-align: center;
+    padding: 60px 40px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 2px 12px rgba(10, 22, 40, 0.05);
+}
+
+.analytics-cta-heading {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.3rem, 2vw, 1.7rem);
+    color: #0a1628;
+    margin-bottom: 12px;
+}
+
+.analytics-cta-text {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #5a6e85;
+    margin-bottom: 28px;
+}
+
+.analytics-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #0E56AA;
+    color: #ffffff;
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.analytics-cta-btn:hover {
+    background-color: #2468d8;
+    transform: translateY(-2px);
+}
+
+.analytics-cta-btn svg {
+    transition: transform 0.3s ease;
+}
+
+.analytics-cta-btn:hover svg {
+    transform: translateX(4px);
+}
+
+/* ── Analytics Page Responsive ── */
+@media (max-width: 1024px) {
+    .analytics-features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .analytics-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .analytics-page {
+        padding: 24px 20px 50px;
+    }
+
+    .analytics-intro {
+        padding: 40px 24px;
+    }
+
+    .analytics-features-grid {
+        grid-template-columns: 1fr;
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .analytics-stats {
+        padding: 40px 24px;
+    }
+
+    .analytics-cta {
+        padding: 40px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .analytics-feature-card {
+        padding: 28px 20px;
+    }
+
+    .analytics-stats-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   CHAT US PAGE
+   ═══════════════════════════════════════════════════════════════ */
+
+.chat-page-header {
+    background-color: #002045;
+}
+
+.chat-page {
+    background-color: #f5f7fb;
+    padding: 40px 60px 80px;
+    min-height: 60vh;
+}
+
+.chat-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+/* ── Header ── */
+.chat-header {
+    margin-bottom: 48px;
+}
+
+.chat-title {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 800;
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    color: #0a1628;
+    letter-spacing: -0.01em;
+    margin-bottom: 6px;
+}
+
+.chat-subtitle {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #5a6e85;
+}
+
+/* ── Intro ── */
+.chat-intro {
+    background: linear-gradient(135deg, #091428 0%, #0b1a33 40%, #0d1f3c 100%);
+    border-radius: 20px;
+    padding: 60px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.chat-intro-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.chat-intro-kicker {
+    display: inline-block;
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #978bff;
+    margin-bottom: 8px;
+}
+
+.chat-intro-heading {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    color: #ffffff;
+    margin-bottom: 16px;
+    line-height: 1.3;
+}
+
+.chat-intro-text {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.92rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+/* ── Contact Methods Grid ── */
+.chat-methods {
+    margin-bottom: 60px;
+}
+
+.chat-methods-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.chat-method-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 36px 28px;
+    box-shadow: 0 2px 12px rgba(10, 22, 40, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chat-method-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(10, 22, 40, 0.1);
+}
+
+.chat-method-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #eef4ff;
+    color: #0E56AA;
+    margin-bottom: 20px;
+}
+
+.chat-method-title {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #0a1628;
+    margin-bottom: 10px;
+}
+
+.chat-method-text {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.88rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #5a6e85;
+    margin-bottom: 20px;
+}
+
+.chat-method-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #0E56AA;
+    transition: gap 0.3s ease;
+}
+
+.chat-method-link:hover {
+    gap: 10px;
+}
+
+.chat-method-link svg {
+    transition: transform 0.3s ease;
+}
+
+.chat-method-link:hover svg {
+    transform: translateX(4px);
+}
+
+/* ── Form Section ── */
+.chat-form-section {
+    margin-bottom: 60px;
+}
+
+.chat-form-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 48px;
+    box-shadow: 0 2px 12px rgba(10, 22, 40, 0.05);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.chat-form-heading {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    color: #0a1628;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.chat-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.chat-form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.chat-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.chat-form-label {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #0a1628;
+}
+
+.chat-form-input,
+.chat-form-textarea {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding: 12px 16px;
+    border: 1.5px solid #dce4f0;
+    border-radius: 10px;
+    background-color: #f5f7fb;
+    color: #0a1628;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chat-form-input:focus,
+.chat-form-textarea:focus {
+    border-color: #0E56AA;
+    box-shadow: 0 0 0 3px rgba(14, 86, 170, 0.1);
+}
+
+.chat-form-textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.chat-form-submit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #0E56AA;
+    color: #ffffff;
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    align-self: flex-start;
+}
+
+.chat-form-submit:hover {
+    background-color: #2468d8;
+    transform: translateY(-2px);
+}
+
+/* ── CTA ── */
+.chat-cta {
+    text-align: center;
+    padding: 60px 40px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 2px 12px rgba(10, 22, 40, 0.05);
+}
+
+.chat-cta-heading {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.3rem, 2vw, 1.7rem);
+    color: #0a1628;
+    margin-bottom: 12px;
+}
+
+.chat-cta-text {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #5a6e85;
+    margin-bottom: 28px;
+}
+
+.chat-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #0E56AA;
+    color: #ffffff;
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.chat-cta-btn:hover {
+    background-color: #2468d8;
+    transform: translateY(-2px);
+}
+
+.chat-cta-btn svg {
+    transition: transform 0.3s ease;
+}
+
+.chat-cta-btn:hover svg {
+    transform: translateX(4px);
+}
+
+/* ── Chat Page Responsive ── */
+@media (max-width: 1024px) {
+    .chat-methods-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .chat-form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .chat-page {
+        padding: 24px 20px 50px;
+    }
+
+    .chat-intro {
+        padding: 40px 24px;
+    }
+
+    .chat-methods-grid {
+        grid-template-columns: 1fr;
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .chat-form-card {
+        padding: 32px 24px;
+    }
+
+    .chat-cta {
+        padding: 40px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .chat-method-card {
+        padding: 28px 20px;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   PLATFORM PAGE
+   ═══════════════════════════════════════════════════════════════ */
+
+.platform-page-header {
+    background-color: #002045;
+}
+
+.platform-page {
+    background-color: #f5f7fb;
+    padding: 40px 60px 80px;
+    min-height: 60vh;
+}
+
+.platform-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+/* ── Header ── */
+.platform-header {
+    margin-bottom: 48px;
+}
+
+.platform-title {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 800;
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    color: #0a1628;
+    letter-spacing: -0.01em;
+    margin-bottom: 6px;
+}
+
+.platform-subtitle {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #5a6e85;
+}
+
+/* ── Intro ── */
+.platform-intro {
+    background: linear-gradient(135deg, #091428 0%, #0b1a33 40%, #0d1f3c 100%);
+    border-radius: 20px;
+    padding: 60px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.platform-intro-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.platform-intro-kicker {
+    display: inline-block;
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #978bff;
+    margin-bottom: 8px;
+}
+
+.platform-intro-heading {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    color: #ffffff;
+    margin-bottom: 16px;
+    line-height: 1.3;
+}
+
+.platform-intro-text {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.92rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+/* ── Highlights Grid ── */
+.platform-highlights {
+    margin-bottom: 60px;
+}
+
+.platform-highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.platform-highlight-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 36px 28px;
+    box-shadow: 0 2px 12px rgba(10, 22, 40, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.platform-highlight-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(10, 22, 40, 0.1);
+}
+
+.platform-highlight-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background-color: #eef4ff;
+    color: #0E56AA;
+    margin-bottom: 20px;
+}
+
+.platform-highlight-title {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #0a1628;
+    margin-bottom: 12px;
+}
+
+.platform-highlight-text {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.88rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #5a6e85;
+}
+
+/* ── Stats ── */
+.platform-stats {
+    background: linear-gradient(135deg, #091428 0%, #0b1a33 40%, #0d1f3c 100%);
+    border-radius: 20px;
+    padding: 60px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.platform-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.platform-stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.platform-stat-number {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 800;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    color: #ffffff;
+}
+
+.platform-stat-label {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.88rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* ── CTA ── */
+.platform-cta {
+    text-align: center;
+    padding: 60px 40px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 2px 12px rgba(10, 22, 40, 0.05);
+}
+
+.platform-cta-heading {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.3rem, 2vw, 1.7rem);
+    color: #0a1628;
+    margin-bottom: 12px;
+}
+
+.platform-cta-text {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #5a6e85;
+    margin-bottom: 28px;
+}
+
+.platform-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #0E56AA;
+    color: #ffffff;
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.platform-cta-btn:hover {
+    background-color: #2468d8;
+    transform: translateY(-2px);
+}
+
+.platform-cta-btn svg {
+    transition: transform 0.3s ease;
+}
+
+.platform-cta-btn:hover svg {
+    transform: translateX(4px);
+}
+
+/* ── Platform Page Responsive ── */
+@media (max-width: 1024px) {
+    .platform-highlights-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .platform-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .platform-page {
+        padding: 24px 20px 50px;
+    }
+
+    .platform-intro {
+        padding: 40px 24px;
+    }
+
+    .platform-highlights-grid {
+        grid-template-columns: 1fr;
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .platform-stats {
+        padding: 40px 24px;
+    }
+
+    .platform-cta {
+        padding: 40px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .platform-highlight-card {
+        padding: 28px 20px;
+    }
+
+    .platform-stats-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DOCUMENTATION PAGE
+   ═══════════════════════════════════════════════════════════════ */
+
+.docs-page-header {
+    background-color: #002045;
+}
+
+.docs-page {
+    background-color: #f5f7fb;
+    padding: 40px 60px 80px;
+    min-height: 60vh;
+}
+
+.docs-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+/* ── Header ── */
+.docs-header {
+    margin-bottom: 48px;
+}
+
+.docs-title {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 800;
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    color: #0a1628;
+    letter-spacing: -0.01em;
+    margin-bottom: 6px;
+}
+
+.docs-subtitle {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #5a6e85;
+}
+
+/* ── Intro ── */
+.docs-intro {
+    background: linear-gradient(135deg, #091428 0%, #0b1a33 40%, #0d1f3c 100%);
+    border-radius: 20px;
+    padding: 60px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.docs-intro-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.docs-intro-kicker {
+    display: inline-block;
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #978bff;
+    margin-bottom: 8px;
+}
+
+.docs-intro-heading {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    color: #ffffff;
+    margin-bottom: 16px;
+    line-height: 1.3;
+}
+
+.docs-intro-text {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.92rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+/* ── Doc Categories Grid ── */
+.docs-categories {
+    margin-bottom: 60px;
+}
+
+.docs-categories-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.docs-category-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 36px 28px;
+    box-shadow: 0 2px 12px rgba(10, 22, 40, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.docs-category-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(10, 22, 40, 0.1);
+}
+
+.docs-category-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background-color: #eef4ff;
+    color: #0E56AA;
+    margin-bottom: 20px;
+}
+
+.docs-category-title {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #0a1628;
+    margin-bottom: 12px;
+}
+
+.docs-category-text {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.88rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #5a6e85;
+}
+
+/* ── CTA ── */
+.docs-cta {
+    text-align: center;
+    padding: 60px 40px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 2px 12px rgba(10, 22, 40, 0.05);
+}
+
+.docs-cta-heading {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.3rem, 2vw, 1.7rem);
+    color: #0a1628;
+    margin-bottom: 12px;
+}
+
+.docs-cta-text {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #5a6e85;
+    margin-bottom: 28px;
+}
+
+.docs-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #0E56AA;
+    color: #ffffff;
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.docs-cta-btn:hover {
+    background-color: #2468d8;
+    transform: translateY(-2px);
+}
+
+.docs-cta-btn svg {
+    transition: transform 0.3s ease;
+}
+
+.docs-cta-btn:hover svg {
+    transform: translateX(4px);
+}
+
+/* ── Documentation Page Responsive ── */
+@media (max-width: 1024px) {
+    .docs-categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .docs-page {
+        padding: 24px 20px 50px;
+    }
+
+    .docs-intro {
+        padding: 40px 24px;
+    }
+
+    .docs-categories-grid {
+        grid-template-columns: 1fr;
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .docs-cta {
+        padding: 40px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .docs-category-card {
+        padding: 28px 20px;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   BLOG PAGE
+   ═══════════════════════════════════════════════════════════════ */
+
+.blog-page-header {
+    background-color: #002045;
+}
+
+.blog-page {
+    background-color: #f5f7fb;
+    padding: 40px 60px 80px;
+    min-height: 60vh;
+}
+
+.blog-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+/* ── Header ── */
+.blog-header {
+    margin-bottom: 48px;
+}
+
+.blog-title {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 800;
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    color: #0a1628;
+    letter-spacing: -0.01em;
+    margin-bottom: 6px;
+}
+
+.blog-subtitle {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #5a6e85;
+}
+
+/* ── Intro ── */
+.blog-intro {
+    background: linear-gradient(135deg, #091428 0%, #0b1a33 40%, #0d1f3c 100%);
+    border-radius: 20px;
+    padding: 60px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.blog-intro-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.blog-intro-kicker {
+    display: inline-block;
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #978bff;
+    margin-bottom: 8px;
+}
+
+.blog-intro-heading {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    color: #ffffff;
+    margin-bottom: 16px;
+    line-height: 1.3;
+}
+
+.blog-intro-text {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.92rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+/* ── Featured Post ── */
+.blog-featured {
+    margin-bottom: 60px;
+}
+
+.blog-featured-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(10, 22, 40, 0.05);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    transition: box-shadow 0.3s ease;
+}
+
+.blog-featured-card:hover {
+    box-shadow: 0 8px 30px rgba(10, 22, 40, 0.1);
+}
+
+.blog-featured-image {
+    background: linear-gradient(135deg, #091428 0%, #0b1a33 40%, #0d1f3c 100%);
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #978bff;
+}
+
+.blog-featured-content {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blog-featured-tag {
+    display: inline-block;
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #0E56AA;
+    margin-bottom: 8px;
+}
+
+.blog-featured-title {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    color: #0a1628;
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+.blog-featured-excerpt {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.88rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #5a6e85;
+    margin-bottom: 20px;
+}
+
+.blog-featured-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #0E56AA;
+    transition: gap 0.3s ease;
+}
+
+.blog-featured-link:hover {
+    gap: 10px;
+}
+
+.blog-featured-link svg {
+    transition: transform 0.3s ease;
+}
+
+.blog-featured-link:hover svg {
+    transform: translateX(4px);
+}
+
+/* ── Blog Grid ── */
+.blog-grid-section {
+    margin-bottom: 60px;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.blog-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(10, 22, 40, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(10, 22, 40, 0.1);
+}
+
+.blog-card-image {
+    background: linear-gradient(135deg, #091428 0%, #0b1a33 40%, #0d1f3c 100%);
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #978bff;
+}
+
+.blog-card-body {
+    padding: 24px;
+}
+
+.blog-card-tag {
+    display: inline-block;
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #0E56AA;
+    margin-bottom: 6px;
+}
+
+.blog-card-title {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #0a1628;
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+
+.blog-card-excerpt {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.82rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #5a6e85;
+    margin-bottom: 16px;
+}
+
+.blog-card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #0E56AA;
+    transition: gap 0.3s ease;
+}
+
+.blog-card-link:hover {
+    gap: 8px;
+}
+
+.blog-card-link svg {
+    transition: transform 0.3s ease;
+}
+
+.blog-card-link:hover svg {
+    transform: translateX(4px);
+}
+
+/* ── CTA ── */
+.blog-cta {
+    text-align: center;
+    padding: 60px 40px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 2px 12px rgba(10, 22, 40, 0.05);
+}
+
+.blog-cta-heading {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.3rem, 2vw, 1.7rem);
+    color: #0a1628;
+    margin-bottom: 12px;
+}
+
+.blog-cta-text {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #5a6e85;
+    margin-bottom: 28px;
+}
+
+.blog-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #0E56AA;
+    color: #ffffff;
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.blog-cta-btn:hover {
+    background-color: #2468d8;
+    transform: translateY(-2px);
+}
+
+.blog-cta-btn svg {
+    transition: transform 0.3s ease;
+}
+
+.blog-cta-btn:hover svg {
+    transform: translateX(4px);
+}
+
+/* ── Blog Page Responsive ── */
+@media (max-width: 1024px) {
+    .blog-featured-card {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-featured-image {
+        min-height: 200px;
+    }
+
+    .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .blog-page {
+        padding: 24px 20px 50px;
+    }
+
+    .blog-intro {
+        padding: 40px 24px;
+    }
+
+    .blog-featured-content {
+        padding: 28px 24px;
+    }
+
+    .blog-grid {
+        grid-template-columns: 1fr;
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .blog-cta {
+        padding: 40px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-card-body {
+        padding: 20px;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   SUPPORT PAGE
+   ═══════════════════════════════════════════════════════════════ */
+
+.support-page-header {
+    background-color: #002045;
+}
+
+.support-page {
+    background-color: #f5f7fb;
+    padding: 40px 60px 80px;
+    min-height: 60vh;
+}
+
+.support-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+/* ── Header ── */
+.support-header {
+    margin-bottom: 48px;
+}
+
+.support-title {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 800;
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    color: #0a1628;
+    letter-spacing: -0.01em;
+    margin-bottom: 6px;
+}
+
+.support-subtitle {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #5a6e85;
+}
+
+/* ── Intro ── */
+.support-intro {
+    background: linear-gradient(135deg, #091428 0%, #0b1a33 40%, #0d1f3c 100%);
+    border-radius: 20px;
+    padding: 60px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.support-intro-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.support-intro-kicker {
+    display: inline-block;
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #978bff;
+    margin-bottom: 8px;
+}
+
+.support-intro-heading {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    color: #ffffff;
+    margin-bottom: 16px;
+    line-height: 1.3;
+}
+
+.support-intro-text {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.92rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+/* ── Help Categories Grid ── */
+.support-categories {
+    margin-bottom: 60px;
+}
+
+.support-categories-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.support-category-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 36px 28px;
+    box-shadow: 0 2px 12px rgba(10, 22, 40, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.support-category-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(10, 22, 40, 0.1);
+}
+
+.support-category-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background-color: #eef4ff;
+    color: #0E56AA;
+    margin-bottom: 20px;
+}
+
+.support-category-title {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #0a1628;
+    margin-bottom: 12px;
+}
+
+.support-category-text {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.88rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #5a6e85;
+}
+
+/* ── FAQ Section ── */
+.support-faq {
+    margin-bottom: 60px;
+}
+
+.support-faq-heading {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.3rem, 2vw, 1.7rem);
+    color: #0a1628;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.support-faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.support-faq-item {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(10, 22, 40, 0.05);
+}
+
+.support-faq-question {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 20px 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #0a1628;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+.support-faq-question:hover {
+    background-color: #f5f7fb;
+}
+
+.support-faq-question svg {
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+    color: #0E56AA;
+}
+
+.support-faq-question[aria-expanded="true"] svg {
+    transform: rotate(180deg);
+}
+
+.support-faq-answer {
+    padding: 0 24px 20px;
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.88rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #5a6e85;
+    display: none;
+}
+
+.support-faq-answer.open {
+    display: block;
+}
+
+/* ── CTA ── */
+.support-cta {
+    text-align: center;
+    padding: 60px 40px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 2px 12px rgba(10, 22, 40, 0.05);
+}
+
+.support-cta-heading {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.3rem, 2vw, 1.7rem);
+    color: #0a1628;
+    margin-bottom: 12px;
+}
+
+.support-cta-text {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #5a6e85;
+    margin-bottom: 28px;
+}
+
+.support-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #0E56AA;
+    color: #ffffff;
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.support-cta-btn:hover {
+    background-color: #2468d8;
+    transform: translateY(-2px);
+}
+
+.support-cta-btn svg {
+    transition: transform 0.3s ease;
+}
+
+.support-cta-btn:hover svg {
+    transform: translateX(4px);
+}
+
+/* ── Support Page Responsive ── */
+@media (max-width: 1024px) {
+    .support-categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .support-page {
+        padding: 24px 20px 50px;
+    }
+
+    .support-intro {
+        padding: 40px 24px;
+    }
+
+    .support-categories-grid {
+        grid-template-columns: 1fr;
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .support-faq-question {
+        padding: 16px 20px;
+        font-size: 0.9rem;
+    }
+
+    .support-faq-answer {
+        padding: 0 20px 16px;
+    }
+
+    .support-cta {
+        padding: 40px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .support-category-card {
+        padding: 28px 20px;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   LEGAL PAGE
+   ═══════════════════════════════════════════════════════════════ */
+
+.legal-page-header {
+    background-color: #002045;
+}
+
+.legal-page {
+    background-color: #f5f7fb;
+    padding: 40px 60px 80px;
+    min-height: 60vh;
+}
+
+.legal-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+/* ── Header ── */
+.legal-header {
+    margin-bottom: 48px;
+}
+
+.legal-title {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 800;
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    color: #0a1628;
+    letter-spacing: -0.01em;
+    margin-bottom: 6px;
+}
+
+.legal-subtitle {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #5a6e85;
+}
+
+/* ── Anchor Tabs ── */
+.legal-tabs {
+    display: flex;
+    gap: 12px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 8px;
+    box-shadow: 0 2px 12px rgba(10, 22, 40, 0.05);
+    margin-bottom: 40px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.legal-tab {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: #5a6e85;
+    padding: 10px 24px;
+    border-radius: 12px;
+    white-space: nowrap;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.legal-tab:hover {
+    color: #0E56AA;
+    background-color: #eef4ff;
+}
+
+.legal-tab.active {
+    color: #ffffff;
+    background-color: #0E56AA;
+}
+
+/* ── Section Card ── */
+.legal-section {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 36px 28px;
+    box-shadow: 0 2px 12px rgba(10, 22, 40, 0.05);
+    margin-bottom: 24px;
+    scroll-margin-top: 90px;
+}
+
+.legal-section-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 28px;
+}
+
+.legal-section-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background-color: #eef4ff;
+    color: #0E56AA;
+    flex-shrink: 0;
+}
+
+.legal-section-title {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    color: #0a1628;
+}
+
+/* ── Section Body ── */
+.legal-section-body {
+    padding-left: 0;
+}
+
+.legal-text {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #5a6e85;
+    margin-bottom: 16px;
+}
+
+.legal-text a {
+    color: #0E56AA;
+    font-weight: 500;
+}
+
+.legal-text a:hover {
+    text-decoration: underline;
+}
+
+.legal-subheading {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: #0a1628;
+    margin-top: 28px;
+    margin-bottom: 12px;
+}
+
+.legal-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 16px;
+}
+
+.legal-list li {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #5a6e85;
+    padding-left: 24px;
+    position: relative;
+    margin-bottom: 6px;
+}
+
+.legal-list li::before {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 12px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #0E56AA;
+}
+
+.legal-highlight {
+    background-color: #eef4ff;
+    border-left: 4px solid #0E56AA;
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin: 20px 0;
+}
+
+.legal-highlight p {
+    font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #0a1628;
+}
+
+.legal-highlight a {
+    color: #0E56AA;
+    font-weight: 600;
+}
+
+/* ── Legal Page Responsive ── */
+@media (max-width: 1024px) {
+    .legal-tabs {
+        gap: 8px;
+    }
+
+    .legal-tab {
+        padding: 10px 18px;
+        font-size: 0.82rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .legal-page {
+        padding: 24px 20px 50px;
+    }
+
+    .legal-tabs {
+        gap: 8px;
+        padding: 6px;
+        margin-bottom: 28px;
+    }
+
+    .legal-tab {
+        padding: 8px 14px;
+        font-size: 0.78rem;
+    }
+
+    .legal-section {
+        padding: 28px 20px;
+    }
+
+    .legal-section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .legal-highlight {
+        padding: 16px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .legal-section {
+        padding: 24px 16px;
+    }
+
+    .legal-tab {
+        padding: 8px 12px;
+        font-size: 0.75rem;
+    }
+}
