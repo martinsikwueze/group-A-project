@@ -101,9 +101,9 @@
   }
 
   function init() {
-    var products = collectProducts();
-    if (!products) {
-      products = loadProducts();
+    var products = loadProducts();
+    if (!products.length) {
+      products = collectProducts();
     }
     var input = document.getElementById("nav-search-input");
     var dropdown = document.getElementById("search-results-dropdown");
